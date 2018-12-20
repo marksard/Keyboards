@@ -208,9 +208,11 @@
 
 左手側  
 ![img](_image/20181212-PC120088_2.jpg)  
+![img](_image/led_leftback.png)  
 
 右手側  
 ![img](_image/20181213-PC130103_2.jpg)  
+![img](_image/led_rightback.png)  
 
 ### 左手でピンセットでチップLEDつまんでPCBの穴にはめ込んで位置合わせ
 
