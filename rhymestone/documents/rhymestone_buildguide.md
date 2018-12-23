@@ -152,9 +152,9 @@
 　Windowsの方はMSYS2を使うか、WSL(Windows Subsystem for Linux)を使う方法があります。MSYS2での書き込み方は[さぼてんさん](https://twitter.com/cactusman)作成の記事[プログラマーではない人向けのQMK Firmware入門](https://qiita.com/cactusman/items/ac41993d1682c6d8a12e)を、WSLは[qmk_firmwareをWindows上でmakeする方法](https://qiita.com/marksard/items/f381caf3ca981f307f64)を参照してファームウェアを書き込める環境を作ってください。  
 　Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。  
 
-　Rhymestoneのデフォルトキーマップのmakeは ```make rhymestone:default``` で可能です。（MSYS2環境上なら ```make rhymestone:default:avrdude``` で書き込みも出来ます）  
+　Rhymestoneのデフォルトキーマップのmakeは ```make rhymestone:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make rhymestone:default:avrdude``` で書き込みも出来ます）  
 
-　LEDの動作確認にはHelixキーボードのテスト用のものが使えます。 ```make helix:led_test``` したものを使います（MSYS2環境上なら ```make helix:led_test:avrdude``` で書き込みも出来ます）  
+　LEDの動作確認にはHelixキーボードのテスト用のものが使えます。 ```make helix:led_test``` したものを使います（Linux、Mac、MSYS2環境上なら ```make helix:led_test:avrdude``` で書き込みも出来ます）  
 
 　Pro Microにリセットボタンはないので、Pro MicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。
 
