@@ -153,6 +153,7 @@
 　Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。  
 
 　Rhymestoneのデフォルトキーマップのmakeは ```make rhymestone:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make rhymestone:default:avrdude``` で書き込みも出来ます）  
+　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/rhymestone/keymaps/default/readme_jp.md)。  
 
 　LEDの動作確認にはHelixキーボードのテスト用のものが使えます。 ```make helix:led_test``` したものを使います（Linux、Mac、MSYS2環境上なら ```make helix:led_test:avrdude``` で書き込みも出来ます）  
 

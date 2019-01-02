@@ -140,6 +140,7 @@
 　Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。  
 
 　Treadstone48のデフォルトキーマップのmakeは ```make treadstone48:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make treadstone48:default:avrdude``` で書き込みも出来ます）  
+　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/treadstone48/keymaps/default/readme_jp.md)。  
 　Pro Microにリセットボタンはないので、Pro MicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。  
 
 ## Pro Microにピンヘッダをはんだ付けする
