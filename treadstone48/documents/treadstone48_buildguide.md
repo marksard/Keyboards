@@ -32,6 +32,7 @@
   - [テスト](#%E3%83%86%E3%82%B9%E3%83%88)
   - [完成！](#%E5%AE%8C%E6%88%90)
   - [キースイッチの交換方法](#%E3%82%AD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E4%BA%A4%E6%8F%9B%E6%96%B9%E6%B3%95)
+  - [Rhymestoneと組み合わせて使用する場合](#rhymestone%E3%81%A8%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%81%A6%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88)
 
 ## パーツ一覧
 
@@ -280,3 +281,8 @@
 ## キースイッチの交換方法
 
 　手では取り外しにくいため、amazonなどで販売されているキースイッチ引き抜き工具を使用して交換してください。  
+
+## Rhymestoneと組み合わせて使用する場合
+
+　Rhymestoneのどちらか片方をTreadstone48に接続してテンキーとして使用できるキーマップを用意しています。  
+　デフォルトのキーマップではRhymestoneは左手側を接続するようにしていますが、右手側の切り替えも可能なようになっています。詳しくは[キーマップのreadmeを参照してください](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/treadstone48/keymaps/like_jis_rs/readme_jp.md)  
