@@ -41,6 +41,7 @@
   - [完成！](#%E5%AE%8C%E6%88%90)
   - [キースイッチの交換方法](#%E3%82%AD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E4%BA%A4%E6%8F%9B%E6%96%B9%E6%B3%95)
   - [30キーチャレンジ用OLED・Pro Micro保護プレートの使い方](#30%E3%82%AD%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E7%94%A8oled%E3%83%BBpro-micro%E4%BF%9D%E8%AD%B7%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
+  - [トラブルシューティング](#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 
 ## パーツ一覧
 
@@ -354,3 +355,7 @@
 　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/rhymestone/keymaps/like_jis_30keys/readme_jp.md)  
 ![img](_image/30key.png)  
 　最初は親指の居場所が心許ないですが、慣れると面白いです！ぜひチャレンジしてみてください。  
+
+## トラブルシューティング
+
+[トラブルシューティング](../../troubleshooting.md)ページを参考にしてください。  
