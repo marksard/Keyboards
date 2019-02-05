@@ -9,6 +9,7 @@ This repository is warehouse of my keyboard architecture.
 
 [Build guide](./rhymestone/documents/rhymestone_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/rhymestone)  
+[Hardware data](https://github.com/marksard/Keyboards/tree/master/rhymestone/)  
 [About Rhymestone]()  
 
 ## Treadstone48
@@ -20,4 +21,14 @@ This repository is warehouse of my keyboard architecture.
 
 [Build guide](./treadstone48/documents/treadstone48_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone48)  
+[Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone48/)  
 [About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
+
+## Stonehenge30
+
+### Link
+
+[Build guide](./stonehenge30/documents/stonehenge30_buildguide.md)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/stonehenge30)  
+[Hardware data](https://github.com/marksard/Keyboards/tree/master/stonehenge30/)  
+[About stonehenge30]()  
