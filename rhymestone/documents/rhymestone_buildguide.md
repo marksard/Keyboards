@@ -166,6 +166,12 @@
 
 　ピンヘッダの取り付けは[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
 が丁寧なのでこちらを参照ください。  
+### Pro Microの向き
+
+　Helixのビルドガイド同様、Pro Microに部品が実装されていない面が上です。  
+
+![img](_image/20190131-P1310235.jpg)  
+
 
 ## 基板の裏と表について
 

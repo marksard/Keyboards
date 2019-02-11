@@ -60,12 +60,19 @@
 　Stonehenge30のキーマップのmakeは ```make stonehenge:like_jis``` で可能です。（Linux、Mac、MSYS2環境上なら ```make stonehenge:like_jis:avrdude``` で書き込みも出来ます）  
 　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/stonehenge30/keymaps/like_jis/readme_jp.md)。  
 
+### Pro Microの向き
+
+　Helix、crkbd、Treadstone48などと同様、部品が実装されていない面を上にしてください。  
+
+![img](_image/20190202-P2020243.jpg)  
+
 ## 基板の裏と表について
 
 　キースイッチが乗り、通常使用する際上を向く面を表、逆を裏とします。  
 　stonehenge30の場合、stonehenge30と印刷の入ったほうが表になります。  
 
-![img](_image/APC_0983.jpg)  
+![img](_image/20190202-P2020237.jpg)  
+![img](_image/20190202-P2020238.jpg)  
 
 ## ダイオードをはんだ付けする
 
@@ -82,6 +89,7 @@
 　黒い帯を下側にしてはんだ付けしてください。シルク印刷がデザインでつぶれている箇所含めすべて同じ向きです。  
 
 ![img](_image/IMG_8447.jpg)  
+![img](_image/20190202-P2020239.jpg)  
 
 ![img](../../treadstone48/documents/_image/diode.png)  
 
@@ -93,7 +101,11 @@
 
 　プレートがないのでスイッチが斜めにつかないように注意して取り付けます。5ピンあるPCBマウント用スイッチを使用してください。
 
-![img](_image/IMG_8435.jpg)  
+![img](_image/20190202-P2020242.jpg)  
+
+もしご家庭にマウントプレートが余っているならこんな感じでスイッチを整列させて何個か一気にやるという手も。  
+
+![img](_image/20190202-P2020240.jpg)  
 
 ## *(オプション)UnderglowLEDをはんだ付けする*
 
@@ -105,13 +117,13 @@
 
 　上段左のLEDは左右端をはんだ付けします。下段右側は左端のみはんだします。  
 
-![img](_image/IMG_8445.jpg)  
+![img](_image/20190203-P2030270.jpg)  
 
 ### 頒布試作機版の注意点
 
 　まずシルクがないです…LED側のGND、DIN、5Vを上段左のランドにはんだします…が、5VとGNDの配線パターンにミスがあり逆になっています。うまい具合に配線剤を使ってクロスして取り付けてください。このときストリップLEDのシール側の金色の部分にハンダが接触するとショートする可能性があるので、金色の部分は剥離紙を被せておくと良いです。  
 
-![img](_image/IMG_8446.jpg)  
+![img](_image/20190203-P2030274.jpg)  
 
 ## キーキャップの取り付け
 
@@ -124,14 +136,15 @@
 
 　参考までに、下の作例写真では戸当のネジ穴のあるゴムと、両端ネジ穴のある8mmスペーサーを使って8箇所脚を作っています。  
 
-![img](_image/IMG_8447.jpg)  
+![img](_image/20190203-P2030276.jpg)  
 
 ## 完成！
 
 　チェックして問題なさそうなら完成です！あなただけの一台に仕上げてください！
 
-![img](_image/IMG_8443.jpg)  
-![img](_image/IMG_8444.jpg)  
+![img](_image/20190202-P2020255.jpg)  
+![img](_image/20190203-P2030266.jpg)  
+![img](_image/20190211-P2110297.jpg)  
 
 ## トラブルシューティング
 
