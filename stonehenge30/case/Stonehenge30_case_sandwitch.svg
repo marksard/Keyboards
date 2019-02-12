@@ -14,7 +14,7 @@
    viewBox="0 0 296.99999 420.00001"
    version="1.1"
    id="svg64"
-   sodipodi:docname="Stonehenge30_case.svg"
+   sodipodi:docname="Stonehenge30_case_sandwitch.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <metadata
      id="metadata70">
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,8 +39,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
      id="namedview66"
      showgrid="true"
      inkscape:snap-grids="true"
@@ -50,10 +50,10 @@
      inkscape:measure-end="0,0"
      inkscape:snap-page="true"
      inkscape:zoom="0.8510267"
-     inkscape:cx="703.42129"
-     inkscape:cy="526.72098"
-     inkscape:window-x="2552"
-     inkscape:window-y="-8"
+     inkscape:cx="1487.4592"
+     inkscape:cy="699.18247"
+     inkscape:window-x="3829"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg64"
      inkscape:snap-object-midpoints="true"
@@ -122,5 +122,10 @@
      style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
      d="m 266.53427,401.02244 a 2.38131,2.38131 0 0 0 2.38125,2.38125 l 17.00052,-0.0501 c 1.10799,-0.003 1.99956,-0.89187 1.99988,-1.99987 l 0.0501,-214.64942 c -1.1e-4,-1.31516 -1.06609,-2.38125 -2.38125,-2.38125 -1.31516,0 -2.38125,1.0661 -2.38125,2.38125 v 211.9364 h -14.28801 a 2.38131,2.38131 0 0 0 -2.38125,2.38177 z m 17.8506,0 a 1.2,1.2 0 0 1 1.19991,-1.20044 1.2,1.2 0 0 1 1.19994,1.20044 1.2,1.2 0 0 1 -1.19994,1.19993 1.2,1.2 0 0 1 -1.19991,-1.19993 z m 0,-69.05831 a 1.2,1.2 0 0 1 1.19991,-1.19993 1.2,1.2 0 0 1 1.19994,1.19993 1.2,1.2 0 0 1 -1.19994,1.19992 1.2,1.2 0 0 1 -1.19991,-1.19992 z m 0,-76.20206 a 1.2,1.2 0 0 1 1.19991,-1.19993 1.2,1.2 0 0 1 1.19994,1.19993 1.2,1.2 0 0 1 -1.19994,1.20044 1.2,1.2 0 0 1 -1.19991,-1.20044 z m 0,-69.0578 a 1.2,1.2 0 0 1 1.19991,-1.19993 1.2,1.2 0 0 1 1.19994,1.19993 1.2,1.2 0 0 1 -1.19994,1.19993 1.2,1.2 0 0 1 -1.19991,-1.19993 z"
      id="path882-5-2-91-5-6-7-2"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+     d="m 189.17343,179.43817 c -0.33307,0 -0.66623,-2e-5 -0.83302,0.16691 -0.16681,0.16693 -0.16692,0.49996 -0.16692,0.83303 v 17.05012 c 0,0.3336 1.1e-4,0.66687 0.16692,0.83354 0.16679,0.16667 0.49995,0.1664 0.83302,0.1664 h 18.21801 c 18.21807,0 18.55169,0 18.71824,-0.1664 0.16653,-0.16641 0.1664,-0.49994 0.1664,-0.83354 v -17.05012 c 0,-0.33307 1.3e-4,-0.66636 -0.1664,-0.83303 -0.16655,-0.16666 -0.49996,-0.16691 -0.83354,-0.16691 z m 1.54047,1.39164 a 1.15,1.15 0 0 1 1.1498,1.1498 1.15,1.15 0 0 1 -1.1498,1.15032 1.15,1.15 0 0 1 -1.1498,-1.15032 1.15,1.15 0 0 1 1.1498,-1.1498 z m 0,13.96969 a 1.15,1.15 0 0 1 1.1498,1.15032 1.15,1.15 0 0 1 -1.1498,1.1498 1.15,1.15 0 0 1 -1.1498,-1.1498 1.15,1.15 0 0 1 1.1498,-1.15032 z"
+     id="path60932-7-3-6-2-9-7-7-4"
      inkscape:connector-curvature="0" />
 </svg>
