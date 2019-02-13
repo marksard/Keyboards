@@ -57,7 +57,7 @@
   Stonehenge30は本家QMKにマージしておりませんので、私のフォークリポジトリの**my_customize**ブランチにあるものをお使いください。  
   [marksard/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)
 
-　Stonehenge30のキーマップのmakeは ```make stonehenge:like_jis``` で可能です。（Linux、Mac、MSYS2環境上なら ```make stonehenge:like_jis:avrdude``` で書き込みも出来ます）  
+　Stonehenge30のキーマップのmakeは ```make stonehenge30:like_jis``` で可能です。（Linux、Mac、MSYS2環境上なら ```make stonehenge30:like_jis:avrdude``` で書き込みも出来ます）  
 　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/stonehenge30/keymaps/like_jis/readme_jp.md)。  
 
 ### Pro Microの向き
