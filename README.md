@@ -25,10 +25,10 @@ This repository is warehouse of my keyboard architecture.
 
 ## Stonehenge30
 
-### Link
-
 ![img](/_image/IMG_8444.jpg)  
 ![img](/_image/IMG_8436.jpg)  
+
+### Link
 
 [Build guide](./stonehenge30/documents/stonehenge30_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/stonehenge30)  
