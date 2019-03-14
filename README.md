@@ -33,3 +33,8 @@ This repository is warehouse of my keyboard architecture.
 [Build guide](./stonehenge30/documents/stonehenge30_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/stonehenge30)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/stonehenge30/)  
+[About Stonehenge30](https://marksard.github.io/2019/02/13/make-stonehenge30/)  
+
+## Troubleshooting
+
+[Troubleshooting](./troubleshooting.md)  

@@ -1,7 +1,12 @@
 # トラブルシューティング
 
-こちらも参考に。  
-　[動かなくて相談したいときに事前に確認する項目](https://scrapbox.io/self-made-kbds-ja/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D%E3%81%AB%E4%BA%8B%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E9%A0%85%E7%9B%AE)
+　有志で作成している[Self-Made Keyboards in Japan](https://scrapbox.io/self-made-kbds-ja/)の記事が役に立つと思いますのでこちらもご一読ください。  
+
+　[動かなくて相談したいときに事前に確認する項目](https://scrapbox.io/self-made-kbds-ja/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D%E3%81%AB%E4%BA%8B%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E9%A0%85%E7%9B%AE)  
+　[キーボードを組み立てるときに陥るミスと対策](https://scrapbox.io/self-made-kbds-ja/%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E7%B5%84%E3%81%BF%E7%AB%8B%E3%81%A6%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AB%E9%99%A5%E3%82%8B%E3%83%9F%E3%82%B9%E3%81%A8%E5%AF%BE%E7%AD%96)  
+　[動かなくて相談したいときに事前に確認する項目(はんだづけ編)](https://scrapbox.io/self-made-kbds-ja/%E5%8B%95%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E7%9B%B8%E8%AB%87%E3%81%97%E3%81%9F%E3%81%84%E3%81%A8%E3%81%8D%E3%81%AB%E4%BA%8B%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E9%A0%85%E7%9B%AE(%E3%81%AF%E3%82%93%E3%81%A0%E3%81%A5%E3%81%91%E7%B7%A8))  
+
+　わからない事があれば、[Self-Made Keyboards in JapanのDiscordサーバー](https://scrapbox.io/self-made-kbds-ja/README_%F0%9F%98%89)に#Treadstone48-and-Rhymestoneチャンネルがありますのでそちらで書き込んでいただくか、[Twitter:@marksard](https://twitter.com/marksard)宛にリプライください。  
 
 ## 必要な道具
 

@@ -22,6 +22,12 @@
   - [完成！](#%E5%AE%8C%E6%88%90)
   - [トラブルシューティング](#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
 
+他リンク  
+[Troubleshooting](../../troubleshooting.md)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone48)  
+[Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone48/)  
+[About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
+
 ## パーツ一覧
 
 ### キット付属品
