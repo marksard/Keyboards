@@ -159,14 +159,14 @@
 
 　Pro Microに先にファームを書き込んでしまいます。はやる気持ちを抑えて最初にソフトウェアの準備と書き込みをしてしまえば、完成後すぐ使用できます。  
 
-  Treadstone48は本家QMKにマージしておりませんので、私のフォークリポジトリの**my_customize**ブランチにあるものをお使いください。  
-  [marksard/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)
+  Treadstone48はQMKを利用しています。ファームウェアは以下をクローンしてビルドしてください。 KeyboardディレクトリにTreadstone48があります。  
+  [qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)
 
 　Windowsの方はMSYS2を使うか、WSL(Windows Subsystem for Linux)を使う方法があります。MSYS2での書き込み方は[さぼてんさん](https://twitter.com/cactusman)作成の記事[プログラマーではない人向けのQMK Firmware入門](https://qiita.com/cactusman/items/ac41993d1682c6d8a12e)を、WSLは[qmk_firmwareをWindows上でmakeする方法](https://qiita.com/marksard/items/f381caf3ca981f307f64)を参照してファームウェアを書き込める環境を作ってください。  
 　Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。  
 
 　Treadstone48のデフォルトキーマップのmakeは ```make treadstone48:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make treadstone48:default:avrdude``` で書き込みも出来ます）  
-　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/treadstone48/keymaps/default/readme_jp.md)。  
+　キーマップについての解説は[ここにあります](https://github.com/qmk/qmk_firmware/blob/master/keyboards/treadstone48/keymaps/default/readme_jp.md)。  
 　Pro Microにリセットボタンはないので、Pro MicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。  
 
 ## Pro Microにピンヘッダをはんだ付けする
