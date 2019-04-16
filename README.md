@@ -63,7 +63,8 @@ This keyboard is removing dedicated modifire-key from the Treadstone48 for more 
 
 ### Link
 
-Nothing yet.
+[Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone32)  
 
 ## Troubleshooting
 
