@@ -53,8 +53,8 @@ The Stonehenge30 is 30 keys (30%) Irregular row staggered keyboard. It is based 
 
 ## Treadstone32
 
-![img](/_image/20190406-P4060065.jpg)  
-![img](/_image/20190405-P4050056.jpg)  
+![img](/_image/20190421-P4210001.jpg)  
+![img](/_image/20190421-P4210005.jpg)  
 
 ## About Treadstone32
 
