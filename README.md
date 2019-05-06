@@ -65,6 +65,7 @@ This keyboard is removing dedicated modifire-key from the Treadstone48 for more 
 
 [Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone32)  
+[About Treadstone32](https://marksard.github.io/2019/04/25/about-treadstone32/)  
 
 ## Troubleshooting
 
