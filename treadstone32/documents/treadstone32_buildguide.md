@@ -74,8 +74,8 @@
 
 ## ファームウェアの準備と書き方
 
-　Treadstone32は本家QMKにマージしておりませんので、私のフォークリポジトリの**my_customize**ブランチにあるものをお使いください。  
-  [marksard/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)
+  Treadstone32はQMKを利用しています。ファームウェアは以下をクローンしてビルドしてください。 KeyboardディレクトリにTreadstone32があります。  
+  [qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)
 
 　Treadstone32のキーマップのmakeは ```make treadstone32:like_jis``` で可能です。（Linux、Mac、MSYS2環境上なら ```make treadstone32:like_jis:dfu``` で書き込みも出来ます）  
 　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/treadstone32/keymaps/like_jis/readme_jp.md)。  
