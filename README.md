@@ -7,7 +7,7 @@ This repository is warehouse of my keyboard architecture.
 
 ### About Rhymestone
 
-The Rhymestone is 40 keys (40%) ortholinear keyboard. It is based on [The crkbd](https://github.com/foostan/crkbd) and [The Helix keyboard](https://github.com/MakotoKurauchi/helix). Thank you so much makoto kurauchi-san and foostan-san.😊  
+The Rhymestone is 40-key (40%) ortholinear keyboard. It is based on [The crkbd](https://github.com/foostan/crkbd) and [The Helix keyboard](https://github.com/MakotoKurauchi/helix). Thank you so much makoto kurauchi-san and foostan-san.😊  
 
 ### Link
 
@@ -22,7 +22,7 @@ The Rhymestone is 40 keys (40%) ortholinear keyboard. It is based on [The crkbd]
 
 ## About Treadstone48
 
-The Treadstone48 is 47 or 48 keys (50%) Irregular row staggered keyboard. It is based on the Rhymestone. Therefore, The Rhymestone can connect to the Treadstone48 as Numpad or lefthand keyboard.  
+The Treadstone48 is 47 or 48-key (50%) Irregular row staggered keyboard. It is based on the Rhymestone. Therefore, The Rhymestone can connect to the Treadstone48 as Numpad or lefthand keyboard.  
 
 This Irregular row staggered keyboard is about an arrangement so that shoulders and hands can be used more naturally than general row-staggered.
 And more one topic, this key arrangement can use general ansi 104 keycaps.
@@ -41,7 +41,7 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 
 ## About Stonehenge30
 
-The Stonehenge30 is 30 keys (30%) Irregular row staggered keyboard. It is based on the Treadstone48. And it is thumb-less (do not use thumb) keyboard of prototype.  
+The Stonehenge30 is 30-key (30%) Irregular row staggered keyboard. It is based on the Treadstone48. And it is thumb-less (do not use thumb) keyboard of prototype.  
 
 ### Link
 
@@ -58,8 +58,8 @@ The Stonehenge30 is 30 keys (30%) Irregular row staggered keyboard. It is based 
 
 ## About Treadstone32
 
-The Treadstone32 is 32 keys (30%) Irregular row staggered keyboard. It is based on the Treadstone48 and the Stonehenge30.  
-This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb keys is left same as Treadtone48.  
+The Treadstone32 is 32-key (30%) Irregular row staggered keyboard. It is based on the Treadstone48 and the Stonehenge30.  
+This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb-key is left same as Treadtone48.  
 
 ### Link
 
