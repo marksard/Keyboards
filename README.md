@@ -30,7 +30,7 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 ### Link
 
 [Build guide](./treadstone48/documents/treadstone48_buildguide.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone48)  
+[Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone48)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone48/)  
 [About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
 
@@ -64,7 +64,7 @@ This keyboard is removing dedicated modifire-key from the Treadstone48 for more 
 ### Link
 
 [Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone32)  
+[Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone32)  
 [About Treadstone32](https://marksard.github.io/2019/04/25/about-treadstone32/)  
 
 ## Troubleshooting
