@@ -1,0 +1,41 @@
+(export (version D)
+  (design
+    (source C:\Users\study\OneDrive\Documents\012_PCB\Treadstone48_rev1.1.2\Treadstone48_plate.sch)
+    (date "2019/02/15 22:42:59")
+    (tool "Eeschema (5.0.0)")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title "Treadstone48 plate")
+        (company marksard)
+        (rev 1.0)
+        (date 2019-02-15)
+        (source Treadstone48_plate.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref MH1)
+      (value MountingHole_Pad)
+      (footprint kbd:LEGO_HOLE_2.4_gnd)
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole_Pad) (description "Mounting Hole with connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C6713C4)))
+  (libparts
+    (libpart (lib Mechanical) (part MountingHole_Pad)
+      (description "Mounting Hole with connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*Pad*))
+      (fields
+        (field (name Reference) MH)
+        (field (name Value) MountingHole_Pad))
+      (pins
+        (pin (num 1) (name 1) (type input)))))
+  (libraries
+    (library (logical Mechanical)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
+  (nets
+    (net (code 2) (name GND)
+      (node (ref MH1) (pin 1)))))
