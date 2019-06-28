@@ -30,6 +30,7 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 ### Link
 
 [Build guide](./treadstone48/documents/treadstone48_buildguide.md)  
+[Build guide (En)](./treadstone48/documents/treadstone48_buildguide_en.md)  
 [Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone48)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone48/)  
 [About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
