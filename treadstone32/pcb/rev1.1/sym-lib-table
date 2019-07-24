@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name kbd)(type Legacy)(uri C:/Users/study/OneDrive/Documents/012_PCB/Treadstone32/skbd.lib)(options "")(descr ""))
+  (lib (name mkl27z256vfm4)(type Legacy)(uri C:/Users/study/OneDrive/Documents/012_PCB/CommonLib/kicad_lib_tmk-master/mkl27z256vfm4.lib)(options "")(descr ""))
+  (lib (name keyboard_parts)(type Legacy)(uri C:/Users/study/OneDrive/Documents/012_PCB/CommonLib/kicad_lib_tmk-master/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name Treadstone32-rescue)(type Legacy)(uri ${KIPRJMOD}/Treadstone32-rescue.lib)(options "")(descr ""))
+)
