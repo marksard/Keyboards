@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name kbd)(type Legacy)(uri C:/Users/study/OneDrive/Documents/012_PCB/Treadstone48/skbd.lib)(options "")(descr ""))
+  (lib (name Treadstone48-rescue)(type Legacy)(uri ${KIPRJMOD}/Treadstone48-rescue.lib)(options "")(descr ""))
+)

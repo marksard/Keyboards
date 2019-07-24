@@ -1,0 +1,1885 @@
+EESchema Schematic File Version 4
+LIBS:Treadstone48-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Treadstone48"
+Date "2018-12-02"
+Rev "1.0"
+Comp "marksard"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 850  850  0    50   Input ~ 0
+LED
+Text GLabel 850  950  0    50   Input ~ 0
+data
+$Comp
+L power:VCC #PWR011
+U 1 1 5B9AD7F2
+P 3300 650
+F 0 "#PWR011" H 3300 500 50  0001 C CNN
+F 1 "VCC" V 3318 777 50  0000 L CNN
+F 2 "" H 3300 650 50  0001 C CNN
+F 3 "" H 3300 650 50  0001 C CNN
+	1    3300 650 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2450 1050 2    50   Input ~ 0
+reset
+Text GLabel 3550 1100 0    50   Input ~ 0
+reset
+Text GLabel 850  1250 0    50   Input ~ 0
+SDA
+Text GLabel 850  1350 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	2450 950  2350 950 
+Wire Wire Line
+	2450 1050 2350 1050
+Wire Wire Line
+	2450 1150 2350 1150
+Wire Wire Line
+	850  850  950  850 
+Wire Wire Line
+	850  950  950  950 
+Wire Wire Line
+	850  1050 950  1050
+Wire Wire Line
+	850  1250 950  1250
+Wire Wire Line
+	850  1350 950  1350
+Wire Wire Line
+	4250 650  4350 650 
+$Comp
+L power:VCC #PWR08
+U 1 1 5B9D401A
+P 2450 1150
+F 0 "#PWR08" H 2450 1000 50  0001 C CNN
+F 1 "VCC" V 2468 1277 50  0000 L CNN
+F 2 "" H 2450 1150 50  0001 C CNN
+F 3 "" H 2450 1150 50  0001 C CNN
+	1    2450 1150
+	0    1    1    0   
+$EndComp
+Text GLabel 850  1450 0    50   Input ~ 0
+col0
+Text GLabel 850  1650 0    50   Input ~ 0
+col2
+Text GLabel 850  1550 0    50   Input ~ 0
+col1
+Text GLabel 850  1750 0    50   Input ~ 0
+col3
+Text GLabel 850  1850 0    50   Input ~ 0
+col4
+Text GLabel 850  1950 0    50   Input ~ 0
+col5
+Text GLabel 2450 1250 2    50   Input ~ 0
+row0
+Text GLabel 2450 1450 2    50   Input ~ 0
+row2
+Text GLabel 2450 1550 2    50   Input ~ 0
+row3
+Text GLabel 2450 1650 2    50   Input ~ 0
+row4
+Text GLabel 2450 1750 2    50   Input ~ 0
+row5
+Text GLabel 2450 1850 2    50   Input ~ 0
+row6
+Text GLabel 2450 1350 2    50   Input ~ 0
+row1
+Text GLabel 2450 1950 2    50   Input ~ 0
+row7
+Wire Wire Line
+	850  1450 950  1450
+Wire Wire Line
+	850  1550 950  1550
+Wire Wire Line
+	850  1650 950  1650
+Wire Wire Line
+	850  1750 950  1750
+Wire Wire Line
+	850  1850 950  1850
+Wire Wire Line
+	850  1950 950  1950
+Wire Wire Line
+	2350 1250 2450 1250
+Wire Wire Line
+	2350 1350 2450 1350
+Wire Wire Line
+	2350 1450 2450 1450
+Wire Wire Line
+	2350 1550 2450 1550
+Wire Wire Line
+	2350 1650 2450 1650
+Wire Wire Line
+	2350 1750 2450 1750
+Wire Wire Line
+	2350 1850 2450 1850
+Wire Wire Line
+	2350 1950 2450 1950
+Wire Wire Line
+	3550 1100 3650 1100
+Wire Wire Line
+	4250 1100 4350 1100
+Text GLabel 1495 2500 0    50   Input ~ 0
+data
+$Comp
+L power:GND #PWR023
+U 1 1 5A92390A
+P 3350 1550
+F 0 "#PWR023" H 3350 1300 50  0001 C CNN
+F 1 "GND" H 3350 1400 50  0000 C CNN
+F 2 "" H 3350 1550 50  0001 C CNN
+F 3 "" H 3350 1550 50  0001 C CNN
+	1    3350 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR024
+U 1 1 5A923DD7
+P 3250 1650
+F 0 "#PWR024" H 3250 1500 50  0001 C CNN
+F 1 "VCC" H 3250 1800 50  0000 C CNN
+F 2 "" H 3250 1650 50  0001 C CNN
+F 3 "" H 3250 1650 50  0001 C CNN
+	1    3250 1650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3350 1750 0    50   Input ~ 0
+SCL
+Text GLabel 3350 1850 0    50   Input ~ 0
+SDA
+$Comp
+L power:VCC #PWR015
+U 1 1 5B9BC4DC
+P 1960 2580
+F 0 "#PWR015" H 1960 2430 50  0001 C CNN
+F 1 "VCC" V 1978 2707 50  0000 L CNN
+F 2 "" H 1960 2580 50  0001 C CNN
+F 3 "" H 1960 2580 50  0001 C CNN
+	1    1960 2580
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 4600 1    50   Input ~ 0
+col0
+Text GLabel 900  5250 0    50   Input ~ 0
+row0
+$Comp
+L kbd:ProMicro U1
+U 1 1 5B9A7C35
+P 1650 1600
+F 0 "U1" H 1650 2637 60  0000 C CNN
+F 1 "ProMicro" H 1650 2531 60  0000 C CNN
+F 2 "kbd:ProMicro_v2_back" H 1750 550 60  0001 C CNN
+F 3 "" H 1750 550 60  0000 C CNN
+	1    1650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5B9A7CA8
+P 2450 950
+F 0 "#PWR07" H 2450 700 50  0001 C CNN
+F 1 "GND" V 2455 822 50  0000 R CNN
+F 2 "" H 2450 950 50  0001 C CNN
+F 3 "" H 2450 950 50  0001 C CNN
+	1    2450 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B9A7D4A
+P 850 1050
+F 0 "#PWR01" H 850 800 50  0001 C CNN
+F 1 "GND" V 855 922 50  0000 R CNN
+F 2 "" H 850 1050 50  0001 C CNN
+F 3 "" H 850 1050 50  0001 C CNN
+	1    850  1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  1150 950  1050
+Connection ~ 950  1050
+$Comp
+L power:GND #PWR014
+U 1 1 5B9A9461
+P 1865 3265
+F 0 "#PWR014" H 1865 3015 50  0001 C CNN
+F 1 "GND" V 1870 3137 50  0000 R CNN
+F 2 "" H 1865 3265 50  0001 C CNN
+F 3 "" H 1865 3265 50  0001 C CNN
+	1    1865 3265
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5B9A94A4
+P 4350 1100
+F 0 "#PWR019" H 4350 850 50  0001 C CNN
+F 1 "GND" V 4355 972 50  0000 R CNN
+F 2 "" H 4350 1100 50  0001 C CNN
+F 3 "" H 4350 1100 50  0001 C CNN
+	1    4350 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5B9A955B
+P 4250 650
+F 0 "#PWR018" H 4250 400 50  0001 C CNN
+F 1 "GND" V 4255 522 50  0000 R CNN
+F 2 "" H 4250 650 50  0001 C CNN
+F 3 "" H 4250 650 50  0001 C CNN
+	1    4250 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L kbd:SW_PUSH RSW1
+U 1 1 5B9A95CB
+P 3950 1100
+F 0 "RSW1" H 3950 1355 50  0000 C CNN
+F 1 "RSW" H 3950 1264 50  0000 C CNN
+F 2 "kbd:ResetSW" H 3950 1100 50  0001 C CNN
+F 3 "" H 3950 1100 50  0000 C CNN
+	1    3950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B9AC47B
+P 3400 650
+F 0 "#FLG01" H 3400 725 50  0001 C CNN
+F 1 "PWR_FLAG" V 3400 778 50  0000 L CNN
+F 2 "" H 3400 650 50  0001 C CNN
+F 3 "~" H 3400 650 50  0001 C CNN
+	1    3400 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B9AC4F1
+P 4350 650
+F 0 "#FLG02" H 4350 725 50  0001 C CNN
+F 1 "PWR_FLAG" V 4350 778 50  0000 L CNN
+F 2 "" H 4350 650 50  0001 C CNN
+F 3 "~" H 4350 650 50  0001 C CNN
+	1    4350 650 
+	0    1    1    0   
+$EndComp
+$Comp
+L kbd:MJ-4PP-9 J1
+U 1 1 5B9AC7BB
+P 2205 2955
+F 0 "J1" H 2008 2916 50  0000 R CNN
+F 1 "MJ-4PP-9" H 2024 3004 50  0000 R CNN
+F 2 "kbd:MJ-4PP-9_front" H 2480 3130 50  0001 C CNN
+F 3 "" H 2480 3130 50  0001 C CNN
+	1    2205 2955
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5B9ACB5F
+P 3550 1650
+F 0 "J2" H 3630 1642 50  0000 L CNN
+F 1 "OLED" H 3630 1551 50  0000 L CNN
+F 2 "kbd:OLED" H 3550 1650 50  0001 C CNN
+F 3 "" H 3550 1650 50  0001 C CNN
+	1    3550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW102
+U 1 1 5B9C1730
+P 1300 4950
+F 0 "SW102" H 1300 4825 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 4900 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 4950 50  0001 C CNN
+F 3 "" H 1300 4950 50  0000 C CNN
+	1    1300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5B9E5052
+P 1600 5100
+F 0 "D1" V 1646 5021 50  0000 R CNN
+F 1 "D" V 1555 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 1600 5100 50  0001 C CNN
+F 3 "~" H 1600 5100 50  0001 C CNN
+	1    1600 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1000 4600 1000 4750
+Connection ~ 1000 4950
+Wire Wire Line
+	900  5250 1600 5250
+Connection ~ 1600 5250
+Text GLabel 1850 4600 1    50   Input ~ 0
+col1
+$Comp
+L kbd:SW_PUSH SW5
+U 1 1 5B9EE7A9
+P 2150 4950
+F 0 "SW5" H 2150 5205 50  0000 C CNN
+F 1 "SW_PUSH" H 2150 5114 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 2150 4950 50  0001 C CNN
+F 3 "" H 2150 4950 50  0000 C CNN
+	1    2150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5B9EE7B0
+P 2450 5100
+F 0 "D5" V 2496 5021 50  0000 R CNN
+F 1 "D" V 2405 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 2450 5100 50  0001 C CNN
+F 3 "~" H 2450 5100 50  0001 C CNN
+	1    2450 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 4600 1850 4950
+Connection ~ 1850 4950
+Connection ~ 2450 5250
+Wire Wire Line
+	1600 5250 2450 5250
+Text GLabel 2700 4600 1    50   Input ~ 0
+col2
+$Comp
+L kbd:SW_PUSH SW9
+U 1 1 5B9F04A1
+P 3000 4950
+F 0 "SW9" H 3000 5205 50  0000 C CNN
+F 1 "SW_PUSH" H 3000 5114 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3000 4950 50  0001 C CNN
+F 3 "" H 3000 4950 50  0000 C CNN
+	1    3000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D9
+U 1 1 5B9F04A8
+P 3300 5100
+F 0 "D9" V 3346 5021 50  0000 R CNN
+F 1 "D" V 3255 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 3300 5100 50  0001 C CNN
+F 3 "~" H 3300 5100 50  0001 C CNN
+	1    3300 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4600 2700 4950
+Connection ~ 2700 4950
+Connection ~ 3300 5250
+Wire Wire Line
+	2450 5250 3300 5250
+Text GLabel 3550 4600 1    50   Input ~ 0
+col3
+$Comp
+L kbd:SW_PUSH SW13
+U 1 1 5B9F232E
+P 3850 4950
+F 0 "SW13" H 3850 5205 50  0000 C CNN
+F 1 "SW_PUSH" H 3850 5114 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3850 4950 50  0001 C CNN
+F 3 "" H 3850 4950 50  0000 C CNN
+	1    3850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D13
+U 1 1 5B9F2335
+P 4150 5100
+F 0 "D13" V 4196 5021 50  0000 R CNN
+F 1 "D" V 4105 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 4150 5100 50  0001 C CNN
+F 3 "~" H 4150 5100 50  0001 C CNN
+	1    4150 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4600 3550 4950
+Connection ~ 3550 4950
+Wire Wire Line
+	3300 5250 4150 5250
+Text GLabel 4400 4600 1    50   Input ~ 0
+col4
+$Comp
+L kbd:SW_PUSH SW17
+U 1 1 5B9F47E0
+P 4700 4950
+F 0 "SW17" H 4700 5205 50  0000 C CNN
+F 1 "SW_PUSH" H 4700 5114 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 4700 4950 50  0001 C CNN
+F 3 "" H 4700 4950 50  0000 C CNN
+	1    4700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D17
+U 1 1 5B9F47E7
+P 5000 5100
+F 0 "D17" V 5046 5021 50  0000 R CNN
+F 1 "D" V 4955 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5000 5100 50  0001 C CNN
+F 3 "~" H 5000 5100 50  0001 C CNN
+	1    5000 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 4600 4400 4950
+Connection ~ 4400 4950
+Wire Wire Line
+	4150 5250 5000 5250
+Text GLabel 900  5950 0    50   Input ~ 0
+row1
+$Comp
+L Device:D D2
+U 1 1 5B9F8BF6
+P 1600 5800
+F 0 "D2" V 1646 5721 50  0000 R CNN
+F 1 "D" V 1555 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 1600 5800 50  0001 C CNN
+F 3 "~" H 1600 5800 50  0001 C CNN
+	1    1600 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  5950 1600 5950
+Connection ~ 1600 5950
+$Comp
+L kbd:SW_PUSH SW6
+U 1 1 5B9F8C02
+P 2150 5650
+F 0 "SW6" H 2150 5905 50  0000 C CNN
+F 1 "SW_PUSH" H 2150 5814 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 2150 5650 50  0001 C CNN
+F 3 "" H 2150 5650 50  0000 C CNN
+	1    2150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D6
+U 1 1 5B9F8C09
+P 2450 5800
+F 0 "D6" V 2496 5721 50  0000 R CNN
+F 1 "D" V 2405 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 2450 5800 50  0001 C CNN
+F 3 "~" H 2450 5800 50  0001 C CNN
+	1    2450 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1850 5650
+Connection ~ 2450 5950
+Wire Wire Line
+	1600 5950 2450 5950
+$Comp
+L kbd:SW_PUSH SW10
+U 1 1 5B9F8C15
+P 3000 5650
+F 0 "SW10" H 3000 5905 50  0000 C CNN
+F 1 "SW_PUSH" H 3000 5814 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3000 5650 50  0001 C CNN
+F 3 "" H 3000 5650 50  0000 C CNN
+	1    3000 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5B9F8C1C
+P 3300 5800
+F 0 "D10" V 3346 5721 50  0000 R CNN
+F 1 "D" V 3255 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 3300 5800 50  0001 C CNN
+F 3 "~" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2700 5650
+Connection ~ 3300 5950
+Wire Wire Line
+	2450 5950 3300 5950
+$Comp
+L kbd:SW_PUSH SW14
+U 1 1 5B9F8C28
+P 3850 5650
+F 0 "SW14" H 3850 5905 50  0000 C CNN
+F 1 "SW_PUSH" H 3850 5814 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3850 5650 50  0001 C CNN
+F 3 "" H 3850 5650 50  0000 C CNN
+	1    3850 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5B9F8C2F
+P 4150 5800
+F 0 "D14" V 4196 5721 50  0000 R CNN
+F 1 "D" V 4105 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 4150 5800 50  0001 C CNN
+F 3 "~" H 4150 5800 50  0001 C CNN
+	1    4150 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3550 5650
+Wire Wire Line
+	3300 5950 4150 5950
+$Comp
+L kbd:SW_PUSH SW18
+U 1 1 5B9F8C3B
+P 4700 5650
+F 0 "SW18" H 4700 5905 50  0000 C CNN
+F 1 "SW_PUSH" H 4700 5814 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 4700 5650 50  0001 C CNN
+F 3 "" H 4700 5650 50  0000 C CNN
+	1    4700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D18
+U 1 1 5B9F8C42
+P 5000 5800
+F 0 "D18" V 5046 5721 50  0000 R CNN
+F 1 "D" V 4955 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5000 5800 50  0001 C CNN
+F 3 "~" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4400 5650
+Wire Wire Line
+	4150 5950 5000 5950
+Wire Wire Line
+	1850 4950 1850 5650
+Wire Wire Line
+	2700 4950 2700 5650
+Wire Wire Line
+	3550 4950 3550 5650
+Wire Wire Line
+	4400 4950 4400 5650
+Text GLabel 900  6650 0    50   Input ~ 0
+row2
+$Comp
+L kbd:SW_PUSH SW3
+U 1 1 5B9FB768
+P 1300 6350
+F 0 "SW3" H 1300 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 6350 50  0001 C CNN
+F 3 "" H 1300 6350 50  0000 C CNN
+	1    1300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5B9FB76F
+P 1600 6500
+F 0 "D3" V 1646 6421 50  0000 R CNN
+F 1 "D" V 1555 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 1600 6500 50  0001 C CNN
+F 3 "~" H 1600 6500 50  0001 C CNN
+	1    1600 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1000 6350
+Wire Wire Line
+	900  6650 1600 6650
+Connection ~ 1600 6650
+$Comp
+L kbd:SW_PUSH SW7
+U 1 1 5B9FB77B
+P 2150 6350
+F 0 "SW7" H 2150 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 2150 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 2150 6350 50  0001 C CNN
+F 3 "" H 2150 6350 50  0000 C CNN
+	1    2150 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 5B9FB782
+P 2450 6500
+F 0 "D7" V 2496 6421 50  0000 R CNN
+F 1 "D" V 2405 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 2450 6500 50  0001 C CNN
+F 3 "~" H 2450 6500 50  0001 C CNN
+	1    2450 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1850 6350
+Connection ~ 2450 6650
+Wire Wire Line
+	1600 6650 2450 6650
+$Comp
+L kbd:SW_PUSH SW11
+U 1 1 5B9FB78E
+P 3000 6350
+F 0 "SW11" H 3000 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 3000 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3000 6350 50  0001 C CNN
+F 3 "" H 3000 6350 50  0000 C CNN
+	1    3000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D11
+U 1 1 5B9FB795
+P 3300 6500
+F 0 "D11" V 3346 6421 50  0000 R CNN
+F 1 "D" V 3255 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 3300 6500 50  0001 C CNN
+F 3 "~" H 3300 6500 50  0001 C CNN
+	1    3300 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2700 6350
+Connection ~ 3300 6650
+Wire Wire Line
+	2450 6650 3300 6650
+$Comp
+L kbd:SW_PUSH SW15
+U 1 1 5B9FB7A1
+P 3850 6350
+F 0 "SW15" H 3850 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 3850 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3850 6350 50  0001 C CNN
+F 3 "" H 3850 6350 50  0000 C CNN
+	1    3850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5B9FB7A8
+P 4150 6500
+F 0 "D15" V 4196 6421 50  0000 R CNN
+F 1 "D" V 4105 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 4150 6500 50  0001 C CNN
+F 3 "~" H 4150 6500 50  0001 C CNN
+	1    4150 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3550 6350
+Wire Wire Line
+	3300 6650 4150 6650
+$Comp
+L kbd:SW_PUSH SW19
+U 1 1 5B9FB7B4
+P 4700 6350
+F 0 "SW19" H 4700 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 4700 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 4700 6350 50  0001 C CNN
+F 3 "" H 4700 6350 50  0000 C CNN
+	1    4700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D19
+U 1 1 5B9FB7BB
+P 5000 6500
+F 0 "D19" V 5046 6421 50  0000 R CNN
+F 1 "D" V 4955 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5000 6500 50  0001 C CNN
+F 3 "~" H 5000 6500 50  0001 C CNN
+	1    5000 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4400 6350
+Wire Wire Line
+	4150 6650 5000 6650
+Wire Wire Line
+	1850 5650 1850 6350
+Wire Wire Line
+	2700 5650 2700 6350
+Wire Wire Line
+	3550 5650 3550 6350
+Wire Wire Line
+	4400 5650 4400 6350
+Text GLabel 900  7350 0    50   Input ~ 0
+row3
+$Comp
+L kbd:SW_PUSH SW16
+U 1 1 5B9FECB0
+P 3850 7050
+F 0 "SW16" H 3850 7305 50  0000 C CNN
+F 1 "SW_PUSH" H 3850 7214 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3850 7050 50  0001 C CNN
+F 3 "" H 3850 7050 50  0000 C CNN
+	1    3850 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5B9FECB7
+P 1600 7200
+F 0 "D4" V 1646 7121 50  0000 R CNN
+F 1 "D" V 1555 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 1600 7200 50  0001 C CNN
+F 3 "~" H 1600 7200 50  0001 C CNN
+	1    1600 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L kbd:SW_PUSH SW8
+U 1 1 5B9FECC3
+P 2150 7050
+F 0 "SW8" H 2150 7305 50  0000 C CNN
+F 1 "SW_PUSH" H 2150 7214 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 2150 7050 50  0001 C CNN
+F 3 "" H 2150 7050 50  0000 C CNN
+	1    2150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D8
+U 1 1 5B9FECCA
+P 2450 7200
+F 0 "D8" V 2496 7121 50  0000 R CNN
+F 1 "D" V 2405 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 2450 7200 50  0001 C CNN
+F 3 "~" H 2450 7200 50  0001 C CNN
+	1    2450 7200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2450 7350
+$Comp
+L kbd:SW_PUSH SW12
+U 1 1 5B9FECD6
+P 3000 7050
+F 0 "SW12" H 3000 7305 50  0000 C CNN
+F 1 "SW_PUSH" H 3000 7214 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 3000 7050 50  0001 C CNN
+F 3 "" H 3000 7050 50  0000 C CNN
+	1    3000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5B9FECDD
+P 3300 7200
+F 0 "D12" V 3346 7121 50  0000 R CNN
+F 1 "D" V 3255 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 3300 7200 50  0001 C CNN
+F 3 "~" H 3300 7200 50  0001 C CNN
+	1    3300 7200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3300 7350
+Wire Wire Line
+	2450 7350 3300 7350
+$Comp
+L Device:D D16
+U 1 1 5B9FECF0
+P 4150 7200
+F 0 "D16" V 4196 7121 50  0000 R CNN
+F 1 "D" V 4105 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 4150 7200 50  0001 C CNN
+F 3 "~" H 4150 7200 50  0001 C CNN
+	1    4150 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 7350 4150 7350
+$Comp
+L Device:D D20
+U 1 1 5B9FED03
+P 5000 7200
+F 0 "D20" V 5046 7121 50  0000 R CNN
+F 1 "D" V 4955 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5000 7200 50  0001 C CNN
+F 3 "~" H 5000 7200 50  0001 C CNN
+	1    5000 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 7350 5000 7350
+Wire Wire Line
+	1850 6350 1850 7050
+Wire Wire Line
+	2700 6350 2700 7050
+Wire Wire Line
+	4400 6350 4400 6850
+Wire Wire Line
+	3400 650  3300 650 
+NoConn ~ 2350 850 
+Connection ~ 4150 7350
+Connection ~ 4150 6650
+Connection ~ 4150 5950
+Connection ~ 4150 5250
+Text GLabel 5250 4600 1    50   Input ~ 0
+col5
+$Comp
+L kbd:SW_PUSH SW21
+U 1 1 5BCF39E2
+P 5550 4950
+F 0 "SW21" H 5550 5205 50  0000 C CNN
+F 1 "SW_PUSH" H 5550 5114 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5550 4950 50  0001 C CNN
+F 3 "" H 5550 4950 50  0000 C CNN
+	1    5550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D21
+U 1 1 5BCF39E9
+P 5850 5100
+F 0 "D21" V 5896 5021 50  0000 R CNN
+F 1 "D" V 5805 5021 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5850 5100 50  0001 C CNN
+F 3 "~" H 5850 5100 50  0001 C CNN
+	1    5850 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 4600 5250 4950
+Connection ~ 5250 4950
+Wire Wire Line
+	5000 5250 5850 5250
+$Comp
+L kbd:SW_PUSH SW22
+U 1 1 5BCF39F3
+P 5550 5650
+F 0 "SW22" H 5550 5905 50  0000 C CNN
+F 1 "SW_PUSH" H 5550 5814 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5550 5650 50  0001 C CNN
+F 3 "" H 5550 5650 50  0000 C CNN
+	1    5550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 5BCF39FA
+P 5850 5800
+F 0 "D22" V 5896 5721 50  0000 R CNN
+F 1 "D" V 5805 5721 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5850 5800 50  0001 C CNN
+F 3 "~" H 5850 5800 50  0001 C CNN
+	1    5850 5800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 5650
+Wire Wire Line
+	5000 5950 5850 5950
+Wire Wire Line
+	5250 4950 5250 5650
+$Comp
+L kbd:SW_PUSH SW23
+U 1 1 5BCF3A04
+P 5550 6350
+F 0 "SW23" H 5550 6605 50  0000 C CNN
+F 1 "SW_PUSH" H 5550 6514 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5550 6350 50  0001 C CNN
+F 3 "" H 5550 6350 50  0000 C CNN
+	1    5550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D23
+U 1 1 5BCF3A0B
+P 5850 6500
+F 0 "D23" V 5896 6421 50  0000 R CNN
+F 1 "D" V 5805 6421 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5850 6500 50  0001 C CNN
+F 3 "~" H 5850 6500 50  0001 C CNN
+	1    5850 6500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 6350
+Wire Wire Line
+	5000 6650 5850 6650
+Wire Wire Line
+	5250 5650 5250 6350
+$Comp
+L Device:D D24
+U 1 1 5BCF3A1C
+P 5850 7200
+F 0 "D24" V 5896 7121 50  0000 R CNN
+F 1 "D" V 5805 7121 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 5850 7200 50  0001 C CNN
+F 3 "~" H 5850 7200 50  0001 C CNN
+	1    5850 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 7350 5850 7350
+Wire Wire Line
+	5250 6350 5250 7050
+Text GLabel 5650 950  1    50   Input ~ 0
+col0
+Text GLabel 5550 1600 0    50   Input ~ 0
+row4
+$Comp
+L kbd:SW_PUSH SW25
+U 1 1 5BD46557
+P 5950 1300
+F 0 "SW25" H 5950 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5950 1300 50  0001 C CNN
+F 3 "" H 5950 1300 50  0000 C CNN
+	1    5950 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D25
+U 1 1 5BD4655E
+P 6250 1450
+F 0 "D25" V 6296 1371 50  0000 R CNN
+F 1 "D" V 6205 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 6250 1450 50  0001 C CNN
+F 3 "~" H 6250 1450 50  0001 C CNN
+	1    6250 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 950  5650 1300
+Connection ~ 5650 1300
+Wire Wire Line
+	5550 1600 6250 1600
+Connection ~ 6250 1600
+Text GLabel 6500 950  1    50   Input ~ 0
+col1
+$Comp
+L kbd:SW_PUSH SW29
+U 1 1 5BD4656A
+P 6800 1300
+F 0 "SW29" H 6800 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 6800 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 6800 1300 50  0001 C CNN
+F 3 "" H 6800 1300 50  0000 C CNN
+	1    6800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D29
+U 1 1 5BD46571
+P 7100 1450
+F 0 "D29" V 7146 1371 50  0000 R CNN
+F 1 "D" V 7055 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7100 1450 50  0001 C CNN
+F 3 "~" H 7100 1450 50  0001 C CNN
+	1    7100 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 950  6500 1300
+Connection ~ 6500 1300
+Connection ~ 7100 1600
+Wire Wire Line
+	6250 1600 7100 1600
+Text GLabel 7350 950  1    50   Input ~ 0
+col2
+$Comp
+L kbd:SW_PUSH SW33
+U 1 1 5BD4657D
+P 7650 1300
+F 0 "SW33" H 7650 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 7650 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 7650 1300 50  0001 C CNN
+F 3 "" H 7650 1300 50  0000 C CNN
+	1    7650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 5BD46584
+P 7950 1450
+F 0 "D33" V 7996 1371 50  0000 R CNN
+F 1 "D" V 7905 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7950 1450 50  0001 C CNN
+F 3 "~" H 7950 1450 50  0001 C CNN
+	1    7950 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 950  7350 1300
+Connection ~ 7350 1300
+Connection ~ 7950 1600
+Wire Wire Line
+	7100 1600 7950 1600
+Text GLabel 8200 950  1    50   Input ~ 0
+col3
+$Comp
+L kbd:SW_PUSH SW37
+U 1 1 5BD46590
+P 8500 1300
+F 0 "SW37" H 8500 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 8500 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 8500 1300 50  0001 C CNN
+F 3 "" H 8500 1300 50  0000 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D37
+U 1 1 5BD46597
+P 8800 1450
+F 0 "D37" V 8846 1371 50  0000 R CNN
+F 1 "D" V 8755 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 8800 1450 50  0001 C CNN
+F 3 "~" H 8800 1450 50  0001 C CNN
+	1    8800 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 950  8200 1300
+Connection ~ 8200 1300
+Wire Wire Line
+	7950 1600 8800 1600
+Text GLabel 9050 950  1    50   Input ~ 0
+col4
+$Comp
+L kbd:SW_PUSH SW41
+U 1 1 5BD465A2
+P 9350 1300
+F 0 "SW41" H 9350 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 9350 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 9350 1300 50  0001 C CNN
+F 3 "" H 9350 1300 50  0000 C CNN
+	1    9350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D41
+U 1 1 5BD465A9
+P 9650 1450
+F 0 "D41" V 9696 1371 50  0000 R CNN
+F 1 "D" V 9605 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 9650 1450 50  0001 C CNN
+F 3 "~" H 9650 1450 50  0001 C CNN
+	1    9650 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 950  9050 1300
+Connection ~ 9050 1300
+Wire Wire Line
+	8800 1600 9650 1600
+Text GLabel 5550 2300 0    50   Input ~ 0
+row5
+$Comp
+L kbd:SW_PUSH SW26
+U 1 1 5BD465B4
+P 5950 2000
+F 0 "SW26" H 5950 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5950 2000 50  0001 C CNN
+F 3 "" H 5950 2000 50  0000 C CNN
+	1    5950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D26
+U 1 1 5BD465BB
+P 6250 2150
+F 0 "D26" V 6296 2071 50  0000 R CNN
+F 1 "D" V 6205 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 6250 2150 50  0001 C CNN
+F 3 "~" H 6250 2150 50  0001 C CNN
+	1    6250 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 2000
+Wire Wire Line
+	5550 2300 6250 2300
+Connection ~ 6250 2300
+$Comp
+L kbd:SW_PUSH SW30
+U 1 1 5BD465C5
+P 6800 2000
+F 0 "SW30" H 6800 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 6800 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 6800 2000 50  0001 C CNN
+F 3 "" H 6800 2000 50  0000 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D30
+U 1 1 5BD465CC
+P 7100 2150
+F 0 "D30" V 7146 2071 50  0000 R CNN
+F 1 "D" V 7055 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7100 2150 50  0001 C CNN
+F 3 "~" H 7100 2150 50  0001 C CNN
+	1    7100 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6500 2000
+Connection ~ 7100 2300
+Wire Wire Line
+	6250 2300 7100 2300
+$Comp
+L kbd:SW_PUSH SW34
+U 1 1 5BD465D6
+P 7650 2000
+F 0 "SW34" H 7650 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 7650 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 7650 2000 50  0001 C CNN
+F 3 "" H 7650 2000 50  0000 C CNN
+	1    7650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D34
+U 1 1 5BD465DD
+P 7950 2150
+F 0 "D34" V 7996 2071 50  0000 R CNN
+F 1 "D" V 7905 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7950 2150 50  0001 C CNN
+F 3 "~" H 7950 2150 50  0001 C CNN
+	1    7950 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7350 2000
+Connection ~ 7950 2300
+Wire Wire Line
+	7100 2300 7950 2300
+$Comp
+L kbd:SW_PUSH SW38
+U 1 1 5BD465E7
+P 8500 2000
+F 0 "SW38" H 8500 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 8500 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 8500 2000 50  0001 C CNN
+F 3 "" H 8500 2000 50  0000 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D38
+U 1 1 5BD465EE
+P 8800 2150
+F 0 "D38" V 8846 2071 50  0000 R CNN
+F 1 "D" V 8755 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 8800 2150 50  0001 C CNN
+F 3 "~" H 8800 2150 50  0001 C CNN
+	1    8800 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8200 2000
+Wire Wire Line
+	7950 2300 8800 2300
+$Comp
+L kbd:SW_PUSH SW42
+U 1 1 5BD465F7
+P 9350 2000
+F 0 "SW42" H 9350 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 9350 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 9350 2000 50  0001 C CNN
+F 3 "" H 9350 2000 50  0000 C CNN
+	1    9350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D42
+U 1 1 5BD465FE
+P 9650 2150
+F 0 "D42" V 9696 2071 50  0000 R CNN
+F 1 "D" V 9605 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 9650 2150 50  0001 C CNN
+F 3 "~" H 9650 2150 50  0001 C CNN
+	1    9650 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9050 2000
+Wire Wire Line
+	8800 2300 9650 2300
+Wire Wire Line
+	5650 1300 5650 2000
+Wire Wire Line
+	6500 1300 6500 2000
+Wire Wire Line
+	7350 1300 7350 2000
+Wire Wire Line
+	8200 1300 8200 2000
+Wire Wire Line
+	9050 1300 9050 2000
+Text GLabel 5550 3000 0    50   Input ~ 0
+row6
+$Comp
+L kbd:SW_PUSH SW27
+U 1 1 5BD4660D
+P 5950 2700
+F 0 "SW27" H 5950 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 5950 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5950 2700 50  0001 C CNN
+F 3 "" H 5950 2700 50  0000 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 5BD46614
+P 6250 2850
+F 0 "D27" V 6296 2771 50  0000 R CNN
+F 1 "D" V 6205 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 6250 2850 50  0001 C CNN
+F 3 "~" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 2700
+Wire Wire Line
+	5550 3000 6250 3000
+Connection ~ 6250 3000
+$Comp
+L kbd:SW_PUSH SW31
+U 1 1 5BD4661E
+P 6800 2700
+F 0 "SW31" H 6800 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 6800 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 6800 2700 50  0001 C CNN
+F 3 "" H 6800 2700 50  0000 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D31
+U 1 1 5BD46625
+P 7100 2850
+F 0 "D31" V 7146 2771 50  0000 R CNN
+F 1 "D" V 7055 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7100 2850 50  0001 C CNN
+F 3 "~" H 7100 2850 50  0001 C CNN
+	1    7100 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6500 2700
+Connection ~ 7100 3000
+Wire Wire Line
+	6250 3000 7100 3000
+$Comp
+L kbd:SW_PUSH SW35
+U 1 1 5BD4662F
+P 7650 2700
+F 0 "SW35" H 7650 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 7650 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 7650 2700 50  0001 C CNN
+F 3 "" H 7650 2700 50  0000 C CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D35
+U 1 1 5BD46636
+P 7950 2850
+F 0 "D35" V 7996 2771 50  0000 R CNN
+F 1 "D" V 7905 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7950 2850 50  0001 C CNN
+F 3 "~" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7350 2700
+Connection ~ 7950 3000
+Wire Wire Line
+	7100 3000 7950 3000
+$Comp
+L kbd:SW_PUSH SW39
+U 1 1 5BD46640
+P 8500 2700
+F 0 "SW39" H 8500 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 8500 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 8500 2700 50  0001 C CNN
+F 3 "" H 8500 2700 50  0000 C CNN
+	1    8500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D39
+U 1 1 5BD46647
+P 8800 2850
+F 0 "D39" V 8846 2771 50  0000 R CNN
+F 1 "D" V 8755 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 8800 2850 50  0001 C CNN
+F 3 "~" H 8800 2850 50  0001 C CNN
+	1    8800 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8200 2700
+Wire Wire Line
+	7950 3000 8800 3000
+$Comp
+L kbd:SW_PUSH SW43
+U 1 1 5BD46650
+P 9350 2700
+F 0 "SW43" H 9350 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 9350 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 9350 2700 50  0001 C CNN
+F 3 "" H 9350 2700 50  0000 C CNN
+	1    9350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D43
+U 1 1 5BD46657
+P 9650 2850
+F 0 "D43" V 9696 2771 50  0000 R CNN
+F 1 "D" V 9605 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 9650 2850 50  0001 C CNN
+F 3 "~" H 9650 2850 50  0001 C CNN
+	1    9650 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9050 2700
+Wire Wire Line
+	8800 3000 9650 3000
+Wire Wire Line
+	5650 2000 5650 2700
+Wire Wire Line
+	6500 2000 6500 2700
+Wire Wire Line
+	7350 2000 7350 2700
+Wire Wire Line
+	8200 2000 8200 2700
+Wire Wire Line
+	9050 2000 9050 2700
+Text GLabel 5550 3700 0    50   Input ~ 0
+row7
+$Comp
+L Device:D D28
+U 1 1 5BD4666D
+P 6250 3550
+F 0 "D28" V 6296 3471 50  0000 R CNN
+F 1 "D" V 6205 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 6250 3550 50  0001 C CNN
+F 3 "~" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 3700 6250 3700
+Connection ~ 6250 3700
+$Comp
+L Device:D D32
+U 1 1 5BD4667D
+P 7100 3550
+F 0 "D32" V 7146 3471 50  0000 R CNN
+F 1 "D" V 7055 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7100 3550 50  0001 C CNN
+F 3 "~" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7100 3700
+Wire Wire Line
+	6250 3700 7100 3700
+$Comp
+L kbd:SW_PUSH SW36
+U 1 1 5BD46686
+P 7650 3400
+F 0 "SW36" H 7650 3655 50  0000 C CNN
+F 1 "SW_PUSH" H 7650 3564 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 7650 3400 50  0001 C CNN
+F 3 "" H 7650 3400 50  0000 C CNN
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D36
+U 1 1 5BD4668D
+P 7950 3550
+F 0 "D36" V 7996 3471 50  0000 R CNN
+F 1 "D" V 7905 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 7950 3550 50  0001 C CNN
+F 3 "~" H 7950 3550 50  0001 C CNN
+	1    7950 3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7950 3700
+Wire Wire Line
+	7100 3700 7950 3700
+$Comp
+L kbd:SW_PUSH SW40
+U 1 1 5BD46696
+P 8500 3400
+F 0 "SW40" H 8500 3655 50  0000 C CNN
+F 1 "SW_PUSH" H 8500 3564 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 8500 3400 50  0001 C CNN
+F 3 "" H 8500 3400 50  0000 C CNN
+	1    8500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D40
+U 1 1 5BD4669D
+P 8800 3550
+F 0 "D40" V 8846 3471 50  0000 R CNN
+F 1 "D" V 8755 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 8800 3550 50  0001 C CNN
+F 3 "~" H 8800 3550 50  0001 C CNN
+	1    8800 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 3700 8800 3700
+$Comp
+L kbd:SW_PUSH SW44
+U 1 1 5BD466A5
+P 9350 3400
+F 0 "SW44" H 9350 3655 50  0000 C CNN
+F 1 "SW_PUSH" H 9350 3564 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 9350 3400 50  0001 C CNN
+F 3 "" H 9350 3400 50  0000 C CNN
+	1    9350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D44
+U 1 1 5BD466AC
+P 9650 3550
+F 0 "D44" V 9696 3471 50  0000 R CNN
+F 1 "D" V 9605 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 9650 3550 50  0001 C CNN
+F 3 "~" H 9650 3550 50  0001 C CNN
+	1    9650 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 3700 9650 3700
+Wire Wire Line
+	5650 2700 5650 3200
+Wire Wire Line
+	6500 2700 6500 3200
+Wire Wire Line
+	7350 2700 7350 3400
+Wire Wire Line
+	8200 2700 8200 3400
+Wire Wire Line
+	9050 2700 9050 3400
+Connection ~ 8800 3700
+Connection ~ 8800 3000
+Connection ~ 8800 2300
+Connection ~ 8800 1600
+Text GLabel 9900 950  1    50   Input ~ 0
+col5
+$Comp
+L kbd:SW_PUSH SW45
+U 1 1 5BD466BE
+P 10200 1300
+F 0 "SW45" H 10200 1555 50  0000 C CNN
+F 1 "SW_PUSH" H 10200 1464 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 10200 1300 50  0001 C CNN
+F 3 "" H 10200 1300 50  0000 C CNN
+	1    10200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D45
+U 1 1 5BD466C5
+P 10500 1450
+F 0 "D45" V 10546 1371 50  0000 R CNN
+F 1 "D" V 10455 1371 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 10500 1450 50  0001 C CNN
+F 3 "~" H 10500 1450 50  0001 C CNN
+	1    10500 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 950  9900 1300
+Connection ~ 9900 1300
+Wire Wire Line
+	9650 1600 10500 1600
+$Comp
+L kbd:SW_PUSH SW46
+U 1 1 5BD466CF
+P 10200 2000
+F 0 "SW46" H 10200 2255 50  0000 C CNN
+F 1 "SW_PUSH" H 10200 2164 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 10200 2000 50  0001 C CNN
+F 3 "" H 10200 2000 50  0000 C CNN
+	1    10200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D46
+U 1 1 5BD466D6
+P 10500 2150
+F 0 "D46" V 10546 2071 50  0000 R CNN
+F 1 "D" V 10455 2071 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 10500 2150 50  0001 C CNN
+F 3 "~" H 10500 2150 50  0001 C CNN
+	1    10500 2150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9900 2000
+Wire Wire Line
+	9650 2300 10500 2300
+Wire Wire Line
+	9900 1300 9900 2000
+$Comp
+L kbd:SW_PUSH SW47
+U 1 1 5BD466E0
+P 10200 2700
+F 0 "SW47" H 10200 2955 50  0000 C CNN
+F 1 "SW_PUSH" H 10200 2864 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 10200 2700 50  0001 C CNN
+F 3 "" H 10200 2700 50  0000 C CNN
+	1    10200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D47
+U 1 1 5BD466E7
+P 10500 2850
+F 0 "D47" V 10546 2771 50  0000 R CNN
+F 1 "D" V 10455 2771 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 10500 2850 50  0001 C CNN
+F 3 "~" H 10500 2850 50  0001 C CNN
+	1    10500 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9900 2700
+Wire Wire Line
+	9650 3000 10500 3000
+Wire Wire Line
+	9900 2000 9900 2700
+$Comp
+L Device:D D48
+U 1 1 5BD466F8
+P 10500 3550
+F 0 "D48" V 10546 3471 50  0000 R CNN
+F 1 "D" V 10455 3471 50  0000 R CNN
+F 2 "kbd:D3_SMD_front" H 10500 3550 50  0001 C CNN
+F 3 "~" H 10500 3550 50  0001 C CNN
+	1    10500 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 3700 10500 3700
+Wire Wire Line
+	9900 2700 9900 3400
+Connection ~ 5000 5250
+Connection ~ 5000 5950
+Connection ~ 5000 6650
+Connection ~ 5000 7350
+Connection ~ 9650 1600
+Connection ~ 9650 2300
+Connection ~ 9650 3000
+Connection ~ 9650 3700
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5BD077EA
+P 4450 1700
+F 0 "J3" H 4530 1742 50  0000 L CNN
+F 1 "Conn_01x03" H 4530 1651 50  0000 L CNN
+F 2 "kbd:StripLED_front" H 4450 1700 50  0001 C CNN
+F 3 "~" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BD0E254
+P 4250 1600
+F 0 "#PWR0101" H 4250 1350 50  0001 C CNN
+F 1 "GND" H 4255 1427 50  0000 C CNN
+F 2 "" H 4250 1600 50  0001 C CNN
+F 3 "" H 4250 1600 50  0001 C CNN
+	1    4250 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5BD0E44A
+P 4250 1800
+F 0 "#PWR0102" H 4250 1650 50  0001 C CNN
+F 1 "VCC" H 4268 1973 50  0000 C CNN
+F 2 "" H 4250 1800 50  0001 C CNN
+F 3 "" H 4250 1800 50  0001 C CNN
+	1    4250 1800
+	-1   0    0    1   
+$EndComp
+Text GLabel 4250 1700 0    50   Input ~ 0
+LED
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5BCDFB43
+P 4450 2450
+F 0 "J4" H 4530 2492 50  0000 L CNN
+F 1 "Conn_01x03" H 4530 2401 50  0000 L CNN
+F 2 "kbd:StripLED_front" H 4450 2450 50  0001 C CNN
+F 3 "~" H 4450 2450 50  0001 C CNN
+	1    4450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5BCDFCBC
+P 4450 2900
+F 0 "J5" H 4530 2942 50  0000 L CNN
+F 1 "Conn_01x03" H 4530 2851 50  0000 L CNN
+F 2 "kbd:StripLED_front" H 4450 2900 50  0001 C CNN
+F 3 "~" H 4450 2900 50  0001 C CNN
+	1    4450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2350 4100 2350
+Wire Wire Line
+	4100 2350 4100 2800
+Wire Wire Line
+	4100 2800 4250 2800
+Wire Wire Line
+	4250 2450 4000 2450
+Wire Wire Line
+	4000 2450 4000 2900
+Wire Wire Line
+	4000 2900 4250 2900
+Wire Wire Line
+	4250 2550 3900 2550
+Wire Wire Line
+	3900 2550 3900 3000
+Wire Wire Line
+	3900 3000 4250 3000
+Wire Wire Line
+	3350 1650 3250 1650
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5BE8170C
+P 1645 2500
+F 0 "JP1" H 1645 2703 50  0000 C CNN
+F 1 "DataJP" H 1645 2613 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1645 2500 50  0001 C CNN
+F 3 "~" H 1645 2500 50  0001 C CNN
+	1    1645 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5BE8185A
+P 1645 2880
+F 0 "JP2" H 1645 3040 50  0000 C CNN
+F 1 "SDLJP" H 1645 2975 50  0000 C CNN
+F 2 "kbd:Jumper" H 1645 2880 50  0001 C CNN
+F 3 "~" H 1645 2880 50  0001 C CNN
+	1    1645 2880
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5BE82204
+P 1650 3030
+F 0 "JP3" H 1650 2870 50  0000 C CNN
+F 1 "SDAJP" H 1650 2935 50  0000 C CNN
+F 2 "kbd:Jumper" H 1650 3030 50  0001 C CNN
+F 3 "~" H 1650 3030 50  0001 C CNN
+	1    1650 3030
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BEEC6F9
+P 1495 2730
+F 0 "R2" H 1450 2655 50  0000 R CNN
+F 1 "R" H 1520 2745 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1425 2730 50  0001 C CNN
+F 3 "~" H 1495 2730 50  0001 C CNN
+	1    1495 2730
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BEED0A5
+P 1310 2730
+F 0 "R1" H 1265 2810 50  0000 R CNN
+F 1 "R" H 1335 2740 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1240 2730 50  0001 C CNN
+F 3 "~" H 1310 2730 50  0001 C CNN
+	1    1310 2730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1865 3265 1865 2930
+Wire Wire Line
+	1865 2930 2005 2930
+Wire Wire Line
+	2005 2980 1960 2980
+Wire Wire Line
+	1960 2980 1960 2580
+Wire Wire Line
+	1800 3030 2005 3030
+Wire Wire Line
+	1795 2880 2005 2880
+Wire Wire Line
+	1495 2580 1960 2580
+Connection ~ 1960 2580
+Wire Wire Line
+	1310 2580 1495 2580
+Connection ~ 1495 2580
+Wire Wire Line
+	1500 3030 1310 3030
+Wire Wire Line
+	1310 3030 1310 2880
+Wire Wire Line
+	1795 2500 1795 2880
+Connection ~ 1795 2880
+Text GLabel 1215 2905 0    50   Input ~ 0
+SCL
+Text GLabel 1215 3030 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	1310 3030 1215 3030
+Connection ~ 1310 3030
+Wire Wire Line
+	1215 2905 1495 2905
+Wire Wire Line
+	1495 2905 1495 2880
+Connection ~ 1495 2880
+Wire Wire Line
+	3550 6350 3550 7050
+$Comp
+L kbd:SW_PUSH SW48
+U 1 1 5BD466F1
+P 10200 3400
+F 0 "SW48" H 10200 3655 50  0000 C CNN
+F 1 "SW_PUSH" H 10200 3564 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 10200 3400 50  0001 C CNN
+F 3 "" H 10200 3400 50  0000 C CNN
+	1    10200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW24
+U 1 1 5BCF3A15
+P 5550 7050
+F 0 "SW24" H 5550 7305 50  0000 C CNN
+F 1 "SW_PUSH" H 5550 7214 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5550 7050 50  0001 C CNN
+F 3 "" H 5550 7050 50  0000 C CNN
+	1    5550 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW4
+U 1 1 5C05471A
+P 1300 6825
+F 0 "SW4" H 1300 6955 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 6780 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 6825 50  0001 C CNN
+F 3 "" H 1300 6825 50  0000 C CNN
+	1    1300 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW20
+U 1 1 5C06BEED
+P 4700 6850
+F 0 "SW20" H 4700 6985 50  0000 C CNN
+F 1 "SW_PUSH" H 4705 6805 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 4700 6850 50  0001 C CNN
+F 3 "" H 4700 6850 50  0000 C CNN
+	1    4700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW220
+U 1 1 5C06BEF4
+P 4700 7050
+F 0 "SW220" H 4695 6925 50  0000 C CNN
+F 1 "SW_PUSH" H 4695 7000 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 4700 7050 50  0001 C CNN
+F 3 "" H 4700 7050 50  0000 C CNN
+	1    4700 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6850 5000 7050
+Connection ~ 5000 7050
+$Comp
+L kbd:SW_PUSH SW28
+U 1 1 5C07E461
+P 5950 3200
+F 0 "SW28" H 5950 3335 50  0000 C CNN
+F 1 "SW_PUSH" H 5955 3155 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 5950 3200 50  0001 C CNN
+F 3 "" H 5950 3200 50  0000 C CNN
+	1    5950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L kbd:SW_PUSH SW32
+U 1 1 5C0846EA
+P 6800 3200
+F 0 "SW32" H 6800 3335 50  0000 C CNN
+F 1 "SW_PUSH" H 6805 3155 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 6800 3200 50  0001 C CNN
+F 3 "" H 6800 3200 50  0000 C CNN
+	1    6800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3200 6250 3400
+Wire Wire Line
+	7100 3200 7100 3400
+Connection ~ 4400 6850
+Wire Wire Line
+	4400 6850 4400 7050
+Wire Wire Line
+	900  7350 1600 7350
+Connection ~ 1600 7350
+Wire Wire Line
+	1600 7350 2450 7350
+$Comp
+L kbd:SW_PUSH SW1
+U 1 1 5C09043E
+P 1300 4750
+F 0 "SW1" H 1300 4900 50  0000 C CNN
+F 1 "SW_PUSH" H 1305 4695 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 4750 50  0001 C CNN
+F 3 "" H 1300 4750 50  0000 C CNN
+	1    1300 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 4750
+Wire Wire Line
+	1000 4750 1000 4950
+Wire Wire Line
+	1600 4750 1600 4950
+Connection ~ 1600 4950
+$Comp
+L kbd:SW_PUSH SW2
+U 1 1 5C0B28BE
+P 1300 5450
+F 0 "SW2" H 1300 5600 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 5400 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 5450 50  0001 C CNN
+F 3 "" H 1300 5450 50  0000 C CNN
+	1    1300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5450 1600 5650
+Connection ~ 1000 5450
+Wire Wire Line
+	1000 4950 1000 5450
+Wire Wire Line
+	1000 5450 1000 6350
+$Comp
+L kbd:SW_PUSH SW404
+U 1 1 5C030701
+P 1300 7050
+F 0 "SW404" H 1300 7180 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 7005 50  0000 C CNN
+F 2 "kbd:CherryMX_Hotswap_front" H 1300 7050 50  0001 C CNN
+F 3 "" H 1300 7050 50  0000 C CNN
+	1    1300 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 7050
+Wire Wire Line
+	1600 6825 1600 7050
+Wire Wire Line
+	1000 6350 1000 6825
+Connection ~ 1000 6825
+Wire Wire Line
+	1000 6825 1000 7050
+$EndSCHEMATC
