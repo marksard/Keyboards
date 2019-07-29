@@ -61,11 +61,10 @@ Steps.
 
 ## Insert key switches to Mount Plate
 
-![img](_image/20181216-PC160160.jpg)  
-
- 
 The parts of the picture can be installed according to your preference.  
 
+![img](_image/keymap.png)  
+![img](_image/20181216-PC160160.jpg)  
 ![img](_image/20181216-PC160161.jpg)  
 
 ## Soldering of Sockets
