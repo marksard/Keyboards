@@ -59,6 +59,7 @@ The Treadstone32 is 32-key (30%) Irregular staggered keyboard. It is based on th
 This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb-key is left same as Treadtone48.  
 
 [Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
+[Build guide (En)](./treadstone32/documents/treadstone32_buildguide_en.md)  
 [Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone32)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone32/)  
 [About Treadstone32](https://marksard.github.io/2019/04/25/about-treadstone32/)  
