@@ -10,7 +10,7 @@
 | Name | Quantity | Note |
 | ---- | ---- | --- |
 | PCB | 1 | |
-| Mount Plate | 1 | |
+| Mount Plate | 1 | FR4(PCB plate) |
 | Acrylic Bottom Plate | 1 | |
 | Acrylic Pro Micro Cover | 1 | |
 | M2 spacer 8mm | 2 | use with Acrylic Pro Micro Cover |
@@ -34,7 +34,7 @@
 | Pin  12P | 2 | For use with Pro micro |
 | Kailh MX Socket | 47〜48 | Kailh socket |
 | *Stabilizer* | *1～2* | *PlateMount* |
-| *LED strip（WS2812B x6）* | *2個* | *Underglow* |
+| *LED strip（WS2812B x6）* | *2* | *Underglow* |
 
 ### Firmware
 
