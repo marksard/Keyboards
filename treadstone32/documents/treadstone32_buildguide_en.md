@@ -98,4 +98,5 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Build of case
 
-![img](_image/20190421-P4210024.jpg)  
+![img](_image/20190717-P7170014.jpg)  
+![img](_image/20190717-P7170016.jpg)  
