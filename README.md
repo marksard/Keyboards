@@ -26,6 +26,8 @@ The Treadstone48 is 47 or 48-key (50%) Irregular staggered keyboard. It is based
 This Irregular staggered keyboard is about an arrangement so that shoulders and hands can be used more naturally than general row-staggered.
 And more one topic, this key arrangement can use general ansi 104 keycaps.
 
+[Build guide (rev.2)](./treadstone48/documents/treadstone48rev2_buildguide.md)  
+
 [Build guide](./treadstone48/documents/treadstone48_buildguide.md)  
 [Build guide (En)](./treadstone48/documents/treadstone48_buildguide_en.md)  
 [Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone48)  
@@ -57,6 +59,8 @@ The Stonehenge30 is 30-key (30%) Irregular staggered keyboard. It is based on th
 
 The Treadstone32 is 32-key (30%) Irregular staggered keyboard. It is based on the Treadstone48 and the Stonehenge30.  
 This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb-key is left same as Treadtone48.  
+
+[Build guide (lite)](./treadstone32/documents/treadstone32lite_buildguide.md)  
 
 [Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
 [Build guide (En)](./treadstone32/documents/treadstone32_buildguide_en.md)  
