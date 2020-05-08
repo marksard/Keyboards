@@ -2,9 +2,6 @@
 
 ## List of parts
 
-![img](_image/20181216-PC160156.jpg)  
-![img](_image/20181216-PC160159.jpg)  
-
 ### Parts included when buying the TS48 kit
 
 | Name | Quantity | Note |
@@ -54,10 +51,9 @@ Steps.
  - Insert in the through hole (Be careful of the direction of the diode)
  - Soldering
 
-![img](_image/20181216-PC160164.jpg)  
-![img](_image/diode.png)  
-![img](_image/20181216-PC160165.jpg)  
-![img](_image/20181216-PC160169.jpg)  
+
+![img](../../_image/diode01.jpg)  
+![img](../../_image/diode02.png)  
 
 ## Insert key switches to Mount Plate
 
@@ -79,7 +75,8 @@ The parts of the picture can be installed according to your preference.
 
 　Be careful with the orientation.  
 
-![img](_image/20190202-P2020261.jpg)  
+![img](../../_image/promicro01.jpg)  
+![img](../../_image/promicro02.jpg)  
 
 ### Soldering of Reset Switch
 
