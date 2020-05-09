@@ -26,7 +26,7 @@
 
 ### オプション
 
-オプションでイルミネーション用LEDと情報表示用のOLEDが取り付け可能です。  
+オプションでイルミネーション用LEDを取り付け可能です。  
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -66,7 +66,7 @@
 ### ファームウェアを準備する
 
 　キーボード用のファームウェア（ハードウェア用の専用ソフトウェアのことをファームウェアと呼びます）の準備をします。  
-  Treadstone32はQMKというソフトウェアにキーマップを登録してあり、それをビルドしてProMicroに書き込むことでキーボードとして動作するようになっています。自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+  Treadstone32LiteはQMKというソフトウェアにキーマップを登録してあり、それをビルドしてProMicroに書き込むことでキーボードとして動作するようになっています。自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
 
 　可能なら[QMK - qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)をクローンしてmake、書き込みまでチャレンジしてみてください。Windows環境でならMSYS2やWSLで仮想Linux環境上でmakeすることが出来ます。以下は参考になるサイトの紹介です。  
 
@@ -77,7 +77,7 @@
 　Treadstone32liteのデフォルトキーマップのmakeは ```make Treadstone32/lite:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make Treadstone32/lite:default:avrdude``` で書き込みも出来ます）  
 　ProMicroにリセットボタンはないので、ProMicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。  
 
-　ただしそこまで自信がない、ということであれば[QMK Configurator](https://config.qmk.fm/#/Treadstone32/lite/LAYOUT_base)のサイトでポチポチ作成し、DLのちQMK ToolboxでProMicroに書き込むことも出来ます。[サリチル酸さん](https://salicylic-acid3.hatenablog.com/)作成の記事[（初心者編）QMK Configuratorを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/qmk-configurator)が参考になります。  
+　ただしそこまで自信がない、ということであれば[QMK Configurator](https://config.qmk.fm/#/Treadstone32/lite/LAYOUT)のサイトでポチポチ作成し、DLのちQMK ToolboxでProMicroに書き込むことも出来ます。[サリチル酸さん](https://salicylic-acid3.hatenablog.com/)作成の記事[（初心者編）QMK Configuratorを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/qmk-configurator)が参考になります。  
 
 　また動作確認のため取り合えず適合するファームウェアが欲しい、ということであれば[QMKサイトで自動ビルドされるこれ](https://qmk.fm/compiled/Treadstone32_lite_default.hex)を使用してください。  
 
@@ -96,7 +96,7 @@
 ## 基板の裏と表について
 
 　キースイッチが乗り、通常使用する際上を向く面を表、逆を裏とします。  
-　Treadstone32は基板中心付近に横長に四角くシルクが刷られているほうが裏面です。  
+　Treadstone32Liteはロゴマークがシルク印刷されているほうが裏面です。  
 
 ## ダイオードをはんだ付けする
 
