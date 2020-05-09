@@ -4,7 +4,7 @@ This repository is warehouse of my keyboard architecture.
 
 ## Rhymestone
 
-![img](/_image/20181214-PC140125.jpg)  
+![img](/_image/_rhymestone.jpg)  
 
 ### About Rhymestone
 
@@ -16,14 +16,17 @@ The Rhymestone is 40-key (40%) ortholinear keyboard. It is based on [The crkbd](
 
 ## Treadstone48
 
-![img](/_image/20181219-PC190003.jpg)  
-![img](/_image/20181128-PB280061.jpg)  
+rev1  
+![img](/_image/_treadstone48.jpg)  
+
+rev2  
+![img](/_image/_treadstone48rev2.jpg)  
 
 ### About Treadstone48
 
-The Treadstone48 is 47 or 48-key (50%) Irregular staggered keyboard. It is based on the Rhymestone. Therefore, The Rhymestone can connect to the Treadstone48 as Numpad or lefthand keyboard.  
+The Treadstone48 is 47 or 48-key (50%) Symmetric staggered keyboard. It is based on the Rhymestone. Therefore, The Rhymestone can connect to the Treadstone48 as Numpad or lefthand keyboard. (rev1 only)  
 
-This Irregular staggered keyboard is about an arrangement so that shoulders and hands can be used more naturally than general row-staggered.
+This Symmetrical Staggered is designed to be easy to use in a natural posture and easy for your fingers to reach.  
 And more one topic, this key arrangement can use general ansi 104 keycaps.
 
 [Build guide (rev.2)](./treadstone48/documents/treadstone48rev2_buildguide.md)  
@@ -37,12 +40,11 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 
 ## Stonehenge30
 
-![img](/_image/IMG_8444.jpg)  
-![img](/_image/IMG_8436.jpg)  
+![img](/_image/_stonehenge30.jpg)  
 
 ### About Stonehenge30
 
-The Stonehenge30 is 30-key (30%) Irregular staggered keyboard. It is based on the Treadstone48. And it is thumb-less (not use thumb) keyboard of prototype.  
+The Stonehenge30 is 30-key (30%) Symmetric staggered keyboard. It is based on the Treadstone48. And it is thumb-less (not use thumb) keyboard of prototype.  
 
 [Build guide](./stonehenge30/documents/stonehenge30_buildguide.md)  
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/stonehenge30)  
@@ -52,12 +54,15 @@ The Stonehenge30 is 30-key (30%) Irregular staggered keyboard. It is based on th
 
 ## Treadstone32
 
-![img](/_image/20190421-P4210001.jpg)  
-![img](/_image/20190421-P4210005.jpg)  
+rev1  
+![img](/_image/_treadstone32.jpg)  
+
+lite  
+![img](/_image/_treadstone32lite.jpg)  
 
 ### About Treadstone32
 
-The Treadstone32 is 32-key (30%) Irregular staggered keyboard. It is based on the Treadstone48 and the Stonehenge30.  
+The Treadstone32 is 32-key (30%) Symmetric staggered keyboard. It is based on the Treadstone48 and the Stonehenge30.  
 This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb-key is left same as Treadtone48.  
 
 [Build guide (lite)](./treadstone32/documents/treadstone32lite_buildguide.md)  
