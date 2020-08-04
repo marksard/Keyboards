@@ -73,6 +73,19 @@ This keyboard is removing dedicated modifire-key from the Treadstone48 for more 
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone32/)  
 [About Treadstone32](https://marksard.github.io/2019/04/25/about-treadstone32/)  
 
+## Treadstone60
+
+![img](/_image/_treadstone60.jpg)  
+
+### About Treadstone60
+
+The Treadstone60 is 59-62key (60%) Symmetric staggered keyboard. It is based on the Treadstone48 and the Treadstone32.  
+
+[Build guide](./treadstone60/documents/treadstone60_buildguide.md)  
+
+[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/)  
+[About Treadstone60](https://marksard.github.io/2019/12/13/about-treadstone60/)  
+
 ## Troubleshooting
 
 [Troubleshooting](./troubleshooting.md)  
