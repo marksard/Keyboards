@@ -86,6 +86,18 @@ The Treadstone60 is 59-62key (60%) Symmetric staggered keyboard. It is based on 
 [Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/)  
 [About Treadstone60](https://marksard.github.io/2019/12/13/about-treadstone60/)  
 
+## Leftover30
+
+![img](/_image/_leftover30.jpg)  
+
+### About Leftover30
+
+The Leftover30 is 34-36key (30%) Row staggered keyboard. This project was created by marksard, yohewi and hdbx.  
+
+[Build guide](./leftover30/documents/leftover30_buildguide.md)  
+
+[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/)  
+
 ## Troubleshooting
 
 [Troubleshooting](./troubleshooting.md)  
