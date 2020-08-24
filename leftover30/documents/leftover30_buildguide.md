@@ -194,12 +194,12 @@ LEDは取り付ける向きがあります。脚の長いほう（アノード�
 
 - あらかじめはんだごてをケースの穴に少し入れ、穴を広げる（ナットを入れた後にネジ穴にケース材が盛り上がるのを防ぐ）
 - 穴位置を確認して、インサートナットを穴の広いほう（座グリされてるほう）を上に向けて置く
-- こて先をキレイにしててインサートナットにはんだごてをあてる
+- こて先をキレイにして、温度調節可能なら270度の低い温度に設定して、インサートナットにはんだごてをあてる（3Dプリントケースは200度程度で溶けだします）
 - 上からゆっくりとケースの穴の周りを溶かしながら入れる
 - ケース面まで埋めたらはんだごてをはずす
 - 冷えるまで30～60秒は待つ
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Yi3AIbshDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![insertnut](http://img.youtube.com/vi/4Yi3AIbshDU/0.jpg)](http://www.youtube.com/watch?v=4Yi3AIbshDU)
 
 　ケースの素材がナットの周辺に盛り上がってしまった場合、冷えてからニッパーなどで切り落としてください。  
 　もし斜めだったり、穴位置がずれていたりする場合はもう一度はんだごてを当てて修正してください。  
