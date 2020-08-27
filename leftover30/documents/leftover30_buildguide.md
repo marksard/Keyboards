@@ -55,14 +55,12 @@ AlpsEC11/12互換のプッシュスイッチ付き垂直ロータリーエンコ
 
 の3パターンが選択可能です。
 
-左下はロータリーエンコーダー用の目隠しカバーの脱着が可能になっています。  
-
 ![img](./_image/re.jpg)  
 
 ### エンターキーキャップの選択
 
 橙枠は1.75Uキーと1.25Uキーの2キーを配置するか、ISOエンターの1キーを配置するかを選択出来ます。  
-ISOエンターを選択する場合、2Uスタビライザーが必要となります。  
+ISOエンターを選択した場合、LキーとISOエンターの間が0.25U隙間が出来ます。また、2Uスタビライザーが必要となります。  
 
 ![img](./_image/layout.png)  
 
@@ -83,10 +81,10 @@ ISOエンターを選択する場合、2Uスタビライザーが必要となり
 
 　leftover30のデフォルトキーマップは ```qmk compile -kb leftover30 -km default``` で可能です。書き込む場合は ```qmk flash -kb leftover30 -km default``` とすると、コンパイルが完了次第書き込み準備が出来るので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
-　現在のところleftover30は公式へアップロードしていません。動作確認やとりあえず使ってみたいなどの場合は以下からhexファイルをDLして、QMK Toolboxを別途インストールして書き込んでください。  
+　動作確認やとりあえず使ってみたいなどの場合は以下からhexファイルをDLして、QMK Toolboxを別途インストールして書き込んでください。  
 書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
 
-[leftover30.hexファイル](https://drive.google.com/file/d/1JeW5edUm1cAlcQXy9B9frmpbzyPHl0y5/view?usp=sharing)  
+[leftover30.hexファイル](https://drive.google.com/file/d/1G8p3kP3uNw5W0oS8urCZ2n4kMvXU0VGv/view?usp=sharing)  
 [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
 
 　
