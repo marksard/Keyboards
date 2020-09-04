@@ -1,8 +1,6 @@
 # Treadstone32 Liteビルドガイド
 
-## パーツ一覧
-
-### キット付属品
+## キット付属品
 
 | 基板番号 | 定数 | 数 | 名前 | 備考 |
 | ---- | ---- | --- | --- | --- |
@@ -16,7 +14,7 @@
 | - | M2 スペーサー 7mm | 6 | 丸型 全ねじスペーサー |
 | - | 2mm | 5 | ゴム脚 |  |
 
-### キット以外に必要なもの
+## キット以外に必要なもの
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -52,48 +50,48 @@
 ![img](../../_image/tool01.jpg)  
 ![img](../../_image/tool02.jpg)  
 
-## 組み立て
+## promicroの準備
 
-　組み立ての時間ですが、1～6時間くらい（ファーム開発環境構築からだと別途+1～2時間程度）を目安にしてください。半田ごて作業していると一時間あっという間に飛びますので時々休憩を入れましょう。またハンダの煙は吸ったり目に入れたりしないように注意しましょう。  
-
-## ProMicroの準備
-
-　机にハンダごてを用意するその前に！ProMicroの準備を先にやってしまいましょう。  
-
-### まずはモゲ対策
-
-　ProMicroに使用されているUSBコネクタはコネクタ部に力がかかるともげやすいです（界隈ではそうなったProMicroは「モゲマイクロ」と呼ばれます）。そうなると買い直しとなるため最初に対策をしておきます。hdbxさんの[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)を見てやってみてください。  
-　エポキシ接着剤を使った場合1～2時間程度で（室温・気温によりますが）触っても大丈夫くらいになると思います。乾くまで時間が少しかかるのでファームウェアの書き込み準備をします。もしすでに準備が出来ているならその先に進んでください。  
-
-### ファームウェアを準備する
-
-　キーボード用のファームウェア（ハードウェア用の専用ソフトウェアのことをファームウェアと呼びます）の準備をします。  
-  Treadstone32LiteはQMKというソフトウェアにキーマップを登録してあり、それをビルドしてProMicroに書き込むことでキーボードとして動作するようになっています。自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
-
-　可能なら[QMK - qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)をクローンしてmake、書き込みまでチャレンジしてみてください。Windows環境でならMSYS2やWSLで仮想Linux環境上でmakeすることが出来ます。以下は参考になるサイトの紹介です。  
-
-- Windows上でMSYS2からの環境構築は[さぼてんさん](https://twitter.com/cactusman)作成の記事[プログラマーではない人向けのQMK Firmware入門](https://qiita.com/cactusman/items/ac41993d1682c6d8a12e)
-- Windows上でWSLからの環境構築は[qmk_firmwareをWindows上でmakeする方法](https://qiita.com/marksard/items/f381caf3ca981f307f64)を参照してファームウェアを書き込める環境を作ってください。
-- Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。
-
-　Treadstone32liteのデフォルトキーマップのmakeは ```make Treadstone32/lite:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make Treadstone32/lite:default:avrdude``` で書き込みも出来ます）  
-　ProMicroにリセットボタンはないので、ProMicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。  
-
-　ただしそこまで自信がない、ということであれば[QMK Configurator](https://config.qmk.fm/#/Treadstone32/lite/LAYOUT)のサイトでポチポチ作成し、DLのちQMK ToolboxでProMicroに書き込むことも出来ます。[サリチル酸さん](https://salicylic-acid3.hatenablog.com/)作成の記事[（初心者編）QMK Configuratorを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/qmk-configurator)が参考になります。  
-
-　また動作確認のため取り合えず適合するファームウェアが欲しい、ということであれば[QMKサイトで自動ビルドされるこれ](https://qmk.fm/compiled/Treadstone32_lite_default.hex)を使用してください。  
-
-## ProMicroにピンヘッダをはんだ付けする
-
-　ピンヘッダの取り付けは[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
-が丁寧なのでこちらを参照ください。  
-
-### ProMicroの向き
-
-　Helixのビルドガイド同様、ProMicroに部品が実装されていない面が上です。  
+　promicroのコネクタ補強、コンスルーピンのはんだ付けを行ってください。  
+　promicroは実装されている面がキーボード基板に向くようにコンスルーを取り付けてください。  
+ - promicroのコネクタ補強：[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)
+ - コンスルーピンのはんだ付け：[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
 
 ![img](../../_image/promicro01.jpg)  
 ![img](../../_image/promicro02.jpg)  
+
+### QMKを準備する
+
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
+
+1. 下記リンクのQMK Toolboxをインストールします
+2. QMK Toolboxの「Keyboard from qmk.fm」の下のリストからtreadstone32 liteを選びます
+   1. （もし見つからなければ以下のリンクのデフォルトhexファイルをDLして、「Local File」で選択してください）
+3. promicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
+   1. （リセットボタンをダブルクリックしないと書き込めないパターンのものもあります）
+
+書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
+
+[デフォルトhexファイル](https://qmk.fm/compiled/treadstone32_lite_default.hex)  
+[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
+
+#### キーマップを自分好みにする
+
+　もしあなたがプログラミング未経験者なら、QMK Configuratorを使うのが早いでしょう。  
+
+[QMK Configurator](https://docs.qmk.fm/#/ja/newbs_building_firmware_configurator)  
+
+#### ビルド環境を作成する
+
+　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+
+[QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
+
+　treadstone32のデフォルトキーマップは  
+```qmk compile -kb treadstone32/lite -km default```
+で可能です。書き込む場合は
+```qmk flash -kb treadstone32/lite -km default```  
+とすると、コンパイルが完了次第書き込み待ちになるので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
 ## 基板の裏と表について
 

@@ -1,59 +1,10 @@
 # Rhymestone ビルドガイド
 
-- [Rhymestone ビルドガイド](#rhymestone-%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89)
-  - [パーツ一覧](#%E3%83%91%E3%83%BC%E3%83%84%E4%B8%80%E8%A6%A7)
-    - [キット付属品](#%E3%82%AD%E3%83%83%E3%83%88%E4%BB%98%E5%B1%9E%E5%93%81)
-    - [キット以外に必要なもの](#%E3%82%AD%E3%83%83%E3%83%88%E4%BB%A5%E5%A4%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%82%E3%81%AE)
-    - [補足](#%E8%A3%9C%E8%B6%B3)
-      - [pro micro](#pro-micro)
-      - [OLEDとOLED用ピンソケット](#oled%E3%81%A8oled%E7%94%A8%E3%83%94%E3%83%B3%E3%82%BD%E3%82%B1%E3%83%83%E3%83%88)
-      - [SK6812mini](#sk6812mini)
-  - [必要な道具](#%E5%BF%85%E8%A6%81%E3%81%AA%E9%81%93%E5%85%B7)
-  - [組み立て](#%E7%B5%84%E3%81%BF%E7%AB%8B%E3%81%A6)
-  - [Pro Microの準備](#pro-micro%E3%81%AE%E6%BA%96%E5%82%99)
-    - [モゲ対策！](#%E3%83%A2%E3%82%B2%E5%AF%BE%E7%AD%96)
-    - [ファームウェアを書き込む](#%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80)
-  - [Pro Microにピンヘッダをはんだ付けする](#pro-micro%E3%81%AB%E3%83%94%E3%83%B3%E3%83%98%E3%83%83%E3%83%80%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-    - [Pro Microの向き](#pro-micro%E3%81%AE%E5%90%91%E3%81%8D)
-  - [基板の裏と表について](#%E5%9F%BA%E6%9D%BF%E3%81%AE%E8%A3%8F%E3%81%A8%E8%A1%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-  - [基板の左右を決める](#%E5%9F%BA%E6%9D%BF%E3%81%AE%E5%B7%A6%E5%8F%B3%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B)
-  - [ダイオードをはんだ付けする](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-    - [ダイオードの脚を曲げる](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%81%AE%E8%84%9A%E3%82%92%E6%9B%B2%E3%81%92%E3%82%8B)
-    - [ダイオードのはんだ付け](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%81%AE%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91)
-  - [*(オプション)LEDをはんだ付けする*](#%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3led%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-    - [LEDの仕組みと接続順序](#led%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%81%A8%E6%8E%A5%E7%B6%9A%E9%A0%86%E5%BA%8F)
-    - [向きを合わせる](#%E5%90%91%E3%81%8D%E3%82%92%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B)
-    - [左手でピンセットでチップLEDつまんでPCBの穴にはめ込んで位置合わせ](#%E5%B7%A6%E6%89%8B%E3%81%A7%E3%83%94%E3%83%B3%E3%82%BB%E3%83%83%E3%83%88%E3%81%A7%E3%83%81%E3%83%83%E3%83%97led%E3%81%A4%E3%81%BE%E3%82%93%E3%81%A7pcb%E3%81%AE%E7%A9%B4%E3%81%AB%E3%81%AF%E3%82%81%E8%BE%BC%E3%82%93%E3%81%A7%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B)
-    - [つまんだまま右手でフラックスを塗る](#%E3%81%A4%E3%81%BE%E3%82%93%E3%81%A0%E3%81%BE%E3%81%BE%E5%8F%B3%E6%89%8B%E3%81%A7%E3%83%95%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9%E3%82%92%E5%A1%97%E3%82%8B)
-    - [220度あたりに設定したハンダごてのこて先にハンダを少し付ける](#220%E5%BA%A6%E3%81%82%E3%81%9F%E3%82%8A%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%97%E3%81%9F%E3%83%8F%E3%83%B3%E3%83%80%E3%81%94%E3%81%A6%E3%81%AE%E3%81%93%E3%81%A6%E5%85%88%E3%81%AB%E3%83%8F%E3%83%B3%E3%83%80%E3%82%92%E5%B0%91%E3%81%97%E4%BB%98%E3%81%91%E3%82%8B)
-    - [LEDの点灯確認](#led%E3%81%AE%E7%82%B9%E7%81%AF%E7%A2%BA%E8%AA%8D)
-    - [残りのランドに同じようにはんだする](#%E6%AE%8B%E3%82%8A%E3%81%AE%E3%83%A9%E3%83%B3%E3%83%89%E3%81%AB%E5%90%8C%E3%81%98%E3%82%88%E3%81%86%E3%81%AB%E3%81%AF%E3%82%93%E3%81%A0%E3%81%99%E3%82%8B)
-  - [*(オプション)OLEDの取り付け*](#%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3oled%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-    - [OLED取り付けのためのPCBのランドショート](#oled%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEpcb%E3%81%AE%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88)
-    - [OLED用のピンソケット・ピンヘッダをはんだ付けする](#oled%E7%94%A8%E3%81%AE%E3%83%94%E3%83%B3%E3%82%BD%E3%82%B1%E3%83%83%E3%83%88%E3%83%BB%E3%83%94%E3%83%B3%E3%83%98%E3%83%83%E3%83%80%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-  - [TRRSコネクタ、タクトスイッチをはんだ付けする](#trrs%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E3%82%BF%E3%82%AF%E3%83%88%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-  - [トッププレートにスイッチをはめ込む](#%E3%83%88%E3%83%83%E3%83%97%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%AB%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%92%E3%81%AF%E3%82%81%E8%BE%BC%E3%82%80)
-  - [MXソケットをはんだ付けする](#mx%E3%82%BD%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-  - [スペーサーの取り付け](#%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B5%E3%83%BC%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-  - [保護パネルの取り付け](#%E4%BF%9D%E8%AD%B7%E3%83%91%E3%83%8D%E3%83%AB%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-  - [キーキャップの取り付け](#%E3%82%AD%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-  - [キーボードファームウェアの書き込み](#%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%81%BF)
-  - [テスト](#%E3%83%86%E3%82%B9%E3%83%88)
-  - [完成！](#%E5%AE%8C%E6%88%90)
-  - [キースイッチの交換方法](#%E3%82%AD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%81%AE%E4%BA%A4%E6%8F%9B%E6%96%B9%E6%B3%95)
-  - [30キーチャレンジ用OLED・Pro Micro保護プレートの使い方](#30%E3%82%AD%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AC%E3%83%B3%E3%82%B8%E7%94%A8oled%E3%83%BBpro-micro%E4%BF%9D%E8%AD%B7%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
-  - [トラブルシューティング](#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
-
-他リンク  
-[Troubleshooting](../../troubleshooting.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/rhymestone)  
-[Hardware data](https://github.com/marksard/Keyboards/tree/master/rhymestone/)  
-
 ## パーツ一覧
 
 ![img](_image/20181212-PC120065.jpg)  
 
-### キット付属品
+## キット付属品
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -71,7 +22,7 @@
 | TRRSジャック | 2個 | |
 | タクトスイッチ | 2個 | |
 
-### キット以外に必要なもの
+## キット以外に必要なもの
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -136,47 +87,47 @@
 ![img](_image/20181212-PC120070.jpg)  
 ![img](_image/20181213-PC130102.jpg)  
 
-## 組み立て
+## promicroの準備
 
-　組み立ての時間ですが、LEDありで6～12時間、LEDなしで2～4時間くらい（ファーム開発環境構築からだと別途+1～2時間程度）を目安にしてください。半田ごてもってると一時間あっという間に飛びますので時々休憩を入れましょう。あとハンダの煙は吸ったり目に入れたりしないように注意しましょう。  
-
-## Pro Microの準備
-
-　机にハンダごてを用意するその前に！Pro Microの準備を先にやってしまいましょう。  
-
-### モゲ対策！
-
-　Pro Microに使用されているUSBコネクタはmicro USBで、それがほぼハンダで保持されている状態のため、付け外しを繰り返すとモゲてしまいます（界隈ではそうなったpro microは「moge micro」と呼んでいます）。そうなると面倒くさいので最初に手を打っておきます。[英さん](https://twitter.com/hdbx)の[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)を見てやってみてください。  
-　エポキシ接着剤を使った場合1～2時間程度で（室温・気温によりますが）触っても大丈夫くらいになると思います。乾くまで時間が少しかかるのでファームウェアの書き込み準備をします。もし準備が出来ているなら先のダイオードのはんだ付けに進んでも良いと思います。  
-
-### ファームウェアを書き込む
-
-　Pro Microに先にファームを書き込んでしまいます。はやる気持ちを抑えて最初にソフトウェアの準備と書き込みをしてしまえば、完成後すぐ使用できます。  
-　オプションのLEDバックライトを取り付ける方は、LEDの点灯確認に使いますので必須項目です。  
-
-  Rhymestoneは本家QMKにマージしておりませんので、私のフォークリポジトリの**my_customize**ブランチにあるものをお使いください。  
-  [marksard/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)
-  
-　Windowsの方はMSYS2を使うか、WSL(Windows Subsystem for Linux)を使う方法があります。MSYS2での書き込み方は[さぼてんさん](https://twitter.com/cactusman)作成の記事[プログラマーではない人向けのQMK Firmware入門](https://qiita.com/cactusman/items/ac41993d1682c6d8a12e)を、WSLは[qmk_firmwareをWindows上でmakeする方法](https://qiita.com/marksard/items/f381caf3ca981f307f64)を参照してファームウェアを書き込める環境を作ってください。  
-　Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。  
-
-　Rhymestoneのデフォルトキーマップのmakeは ```make rhymestone:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make rhymestone:default:avrdude``` で書き込みも出来ます）  
-　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/rhymestone/keymaps/default/readme_jp.md)。  
-
-　LEDの動作確認にはHelixキーボードのテスト用のものが使えます。 ```make helix:led_test``` したものを使います（Linux、Mac、MSYS2環境上なら ```make helix:led_test:avrdude``` で書き込みも出来ます）  
-
-　Pro Microにリセットボタンはないので、Pro MicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。
-
-## Pro Microにピンヘッダをはんだ付けする
-
-　ピンヘッダの取り付けは[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
-が丁寧なのでこちらを参照ください。  
-### Pro Microの向き
-
-　Helixのビルドガイド同様、Pro Microに部品が実装されていない面が上です。  
+　promicroのコネクタ補強、コンスルーピンのはんだ付けを行ってください。  
+　promicroは実装されている面がキーボード基板に向くようにコンスルーを取り付けてください。  
+ - promicroのコネクタ補強：[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)
+ - コンスルーピンのはんだ付け：[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
 
 ![img](_image/20190131-P1310235.jpg)  
 
+### QMKを準備する
+
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
+
+1. 下記リンクのQMK Toolboxをインストールします
+2. QMK Toolboxの「Keyboard from qmk.fm」の下のリストからrhymestoneを選びます
+   1. （もし見つからなければ以下のリンクのデフォルトhexファイルをDLして、「Local File」で選択してください）
+3. promicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
+   1. （リセットボタンをダブルクリックしないと書き込めないパターンのものもあります）
+
+書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
+
+[デフォルトhexファイル](https://qmk.fm/compiled/marksard_rhymestone_default.hex)  
+[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
+
+#### キーマップを自分好みにする
+
+　もしあなたがプログラミング未経験者なら、QMK Configuratorを使うのが早いでしょう。  
+
+[QMK Configurator](https://docs.qmk.fm/#/ja/newbs_building_firmware_configurator)  
+
+#### ビルド環境を作成する
+
+　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+
+[QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
+
+　rhymestoneのデフォルトキーマップは  
+```qmk compile -kb marksard/rhymestone -km default```
+で可能です。書き込む場合は
+```qmk flash -kb marksard/rhymestone -km default```  
+とすると、コンパイルが完了次第書き込み待ちになるので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
 ## 基板の裏と表について
 

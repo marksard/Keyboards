@@ -5,11 +5,7 @@
 　Treadstone32はすべてチップ部品を使っており、ピッチの細かい部品のはんだ付けがあるため自作キーボードの中でも難易度は高いです。まず使用する道具はちゃんとそろえてくださいますようお願いいたします。  
 　また特にmicroUSBのピンとMCUのピンはピッチが狭いため、慣れないとハンダで隣のピンをブリッジすることがあります。これを気づかずに電源を入れると最悪部品をを破損しますので重ねてご注意くださいますようお願いいたします。  
 
-## パーツ一覧
-
-細かいチップ部品は予備として1個多く入れています。  
-
-### キット付属品
+## キット付属品
 
 | 基板番号 | 定数 | 数 | 名前 | 備考 |
 | ---- | ---- | --- | --- | --- |
@@ -40,7 +36,7 @@
 | - | M2 1.6mm | 6 | ナット |  |
 | - | M2 17mm- | 6 | ボルト |  |
 
-### キット以外に必要なもの
+## キット以外に必要なもの
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -70,27 +66,40 @@
 | テスター | 接続確認、ブリッジしていないかの確認に必須です |
 | キズミ、ルーペなど | MicroUSBやAtmega32U4のハンダブリッジを目視で確認する際に必要 |
 
-### ファームウェアを準備する
+### QMKを準備する
 
-　キーボード用のファームウェア（ハードウェア用の専用ソフトウェアのことをファームウェアと呼びます）の準備をします。  
-  Treadstone32はQMKというソフトウェアにキーマップを登録してあり、それをビルドしてProMicroに書き込むことでキーボードとして動作するようになっています。自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
 
-　可能なら[QMK - qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)をクローンしてmake、書き込みまでチャレンジしてみてください。Windows環境でならMSYS2やWSLで仮想Linux環境上でmakeすることが出来ます。以下は参考になるサイトの紹介です。  
+1. 下記リンクのQMK Toolboxをインストールします
+2. QMK Toolboxの「Keyboard from qmk.fm」の下のリストからtreadstone32を選びます
+   1. （もし見つからなければ以下のリンクのデフォルトhexファイルをDLして、「Local File」で選択してください）
+3. promicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
+   1. （リセットボタンをダブルクリックしないと書き込めないパターンのものもあります）
 
-- Windows上でMSYS2からの環境構築は[さぼてんさん](https://twitter.com/cactusman)作成の記事[プログラマーではない人向けのQMK Firmware入門](https://qiita.com/cactusman/items/ac41993d1682c6d8a12e)
-- Windows上でWSLからの環境構築は[qmk_firmwareをWindows上でmakeする方法](https://qiita.com/marksard/items/f381caf3ca981f307f64)を参照してファームウェアを書き込める環境を作ってください。
-- Macな方はDocker使うほうが確実かもしれません。[自作キーボードに手を出した](https://poyo.hatenablog.jp/entry/2018/10/08/003800) の後半に記述があります。
+書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
 
-　Treadstone32のデフォルトキーマップのmakeは ```make Treadstone32:default``` で可能です。（Linux、Mac、MSYS2環境上なら ```make Treadstone32:default:dfu``` で書き込みも出来ます）  
-　ProMicroにリセットボタンはないので、ProMicroのGNDピンとRSTピン（隣同士ならんでいます）をピンセットなどでショートさせてください。  
+[デフォルトhexファイル](https://qmk.fm/compiled/treadstone32_default.hex)  
+[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
 
-　ただしそこまで自信がない、ということであれば[QMK Configurator](https://config.qmk.fm/#/treadstone32/LAYOUT)のサイトでポチポチ作成し、DLのちQMK ToolboxでProMicroに書き込むことも出来ます。[サリチル酸さん](https://salicylic-acid3.hatenablog.com/)作成の記事[（初心者編）QMK Configuratorを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/qmk-configurator)が参考になります。  
+#### キーマップを自分好みにする
 
-　また動作確認のため取り合えず適合するファームウェアが欲しい、ということであれば[QMKサイトで自動ビルドされるこれ](https://qmk.fm/compiled/Treadstone32_default.hex)を使用してください。  
+　もしあなたがプログラミング未経験者なら、QMK Configuratorを使うのが早いでしょう。  
+
+[QMK Configurator](https://docs.qmk.fm/#/ja/newbs_building_firmware_configurator)  
+
+#### ビルド環境を作成する
+
+　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+
+[QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
+
+　treadstone32のデフォルトキーマップは  
+```qmk compile -kb treadstone32 -km default```
+で可能です。書き込む場合は
+```qmk flash -kb treadstone32 -km default```  
+とすると、コンパイルが完了次第書き込み待ちになるので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
 ## 組み立て
-
-　組み立ての時間ですが、2～6時間くらい（ファーム開発環境構築からだと別途+1～2時間程度）を目安にしてください。半田ごて作業していると一時間あっという間に飛びますので時々休憩を入れましょう。またハンダの煙は吸ったり目に入れたりしないように注意しましょう。  
 
 　組み立ての順序は出来れば難しいパーツから取り掛かります（最後に難しいパーツを取り付けて失敗したときの徒労感が半端ないので）。ただ最初からは厳しいと思いますので、素振りとしてダイオードを数個付けて身体と半田ごてを慣らしてからでも良いかと思います。  
 　もし失敗してパーツや基板をダメにしてどうしようもない場合はBoothやTwitter、Discord等からご連絡ください。補修部品を販売いたします。  

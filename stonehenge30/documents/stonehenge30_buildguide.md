@@ -1,42 +1,12 @@
 # Stonehenge30 ビルドガイド
 
-- [Stonehenge30 ビルドガイド](#stonehenge30-%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89)
-  - [パーツ一覧](#%E3%83%91%E3%83%BC%E3%83%84%E4%B8%80%E8%A6%A7)
-    - [キット付属品](#%E3%82%AD%E3%83%83%E3%83%88%E4%BB%98%E5%B1%9E%E5%93%81)
-    - [キット以外に必要なもの](#%E3%82%AD%E3%83%83%E3%83%88%E4%BB%A5%E5%A4%96%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%82%E3%81%AE)
-    - [補足](#%E8%A3%9C%E8%B6%B3)
-  - [組み立て](#%E7%B5%84%E3%81%BF%E7%AB%8B%E3%81%A6)
-  - [Pro Microの準備](#pro-micro%E3%81%AE%E6%BA%96%E5%82%99)
-    - [ファームウェアを書き込む](#%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80)
-    - [Pro Microの向き](#pro-micro%E3%81%AE%E5%90%91%E3%81%8D)
-  - [基板の裏と表について](#%E5%9F%BA%E6%9D%BF%E3%81%AE%E8%A3%8F%E3%81%A8%E8%A1%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-  - [ダイオードをはんだ付けする](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-    - [ダイオードの脚を曲げる](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%81%AE%E8%84%9A%E3%82%92%E6%9B%B2%E3%81%92%E3%82%8B)
-    - [ダイオードのはんだ付け](#%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89%E3%81%AE%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91)
-  - [タクトスイッチをはんだ付けする](#%E3%82%BF%E3%82%AF%E3%83%88%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-  - [スイッチをはんだ付けする](#%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-  - [*(オプション)UnderglowLEDをはんだ付けする*](#%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3underglowled%E3%82%92%E3%81%AF%E3%82%93%E3%81%A0%E4%BB%98%E3%81%91%E3%81%99%E3%82%8B)
-    - [頒布試作機版の注意点](#%E9%A0%92%E5%B8%83%E8%A9%A6%E4%BD%9C%E6%A9%9F%E7%89%88%E3%81%AE%E6%B3%A8%E6%84%8F%E7%82%B9)
-  - [キーキャップの取り付け](#%E3%82%AD%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-  - [脚の取り付け](#%E8%84%9A%E3%81%AE%E5%8F%96%E3%82%8A%E4%BB%98%E3%81%91)
-  - [完成！](#%E5%AE%8C%E6%88%90)
-  - [トラブルシューティング](#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)
-
-他リンク  
-[Troubleshooting](../../troubleshooting.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/treadstone48)  
-[Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone48/)  
-[About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
-
-## パーツ一覧
-
-### キット付属品
+## キット付属品
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
 | PCB | 1枚 | |
 
-### キット以外に必要なもの
+## キット以外に必要なもの
 
 | 名前 | 数 | 備考 |
 | ---- | ---- | --- |
@@ -49,29 +19,29 @@
 | *LEDストリップ（WS2812B 6個付き）* | *2個* | *Underglow用（オプション）* |
 | MicroUSBケーブル | 1本 | キーボードとPC接続用 |
 
-### 補足
+## promicroの準備
 
-## 組み立て
+　promicroのコネクタ補強、コンスルーピンのはんだ付けを行ってください。  
+　promicroは実装されている面がキーボード基板に向くようにコンスルーを取り付けてください。  
+ - promicroのコネクタ補強：[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)
+ - コンスルーピンのはんだ付け：[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
 
-　組み立ての時間は1～3時間くらいが目安です。  
+![img](../../_image/promicro01.jpg)  
+![img](../../_image/promicro02.jpg)  
 
-## Pro Microの準備
+### QMKを準備する
 
-### ファームウェアを書き込む
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
 
-　Pro Microに先にファームを書き込んでしまいます。はやる気持ちを抑えて最初にソフトウェアの準備と書き込みをしてしまえば、完成後すぐ使用できます。  
+　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
 
-  Stonehenge30は本家QMKにマージしておりませんので、私のフォークリポジトリの**my_customize**ブランチにあるものをお使いください。  
-  [marksard/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)
+[QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
 
-　Stonehenge30のキーマップのmakeは ```make stonehenge30:like_jis``` で可能です。（Linux、Mac、MSYS2環境上なら ```make stonehenge30:like_jis:avrdude``` で書き込みも出来ます）  
-　キーマップについての解説は[ここにあります](https://github.com/marksard/qmk_firmware/blob/my_customize/keyboards/stonehenge30/keymaps/like_jis/readme_jp.md)。  
-
-### Pro Microの向き
-
-　Helix、crkbd、Treadstone48などと同様、部品が実装されていない面を上にしてください。  
-
-![img](_image/20190202-P2020243.jpg)  
+　stonehenge30のデフォルトキーマップは  
+```qmk compile -kb marksard/stonehenge30 -km default```
+で可能です。書き込む場合は
+```qmk flash -kb marksard/stonehenge30 -km default```  
+とすると、コンパイルが完了次第書き込み待ちになるので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
 ## 基板の裏と表について
 

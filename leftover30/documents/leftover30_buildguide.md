@@ -1,3 +1,5 @@
+# Leftover30 ビルドガイド
+
 ## キット付属品
 
 | 基板番号 | 数 | 名前 | 備考 |
@@ -66,28 +68,46 @@ ISOエンターを選択した場合、LキーとISOエンターの間が0.25U�
 
 ## promicroの準備
 
- promicroのコネクタ補強、コンスルーピンのはんだ付けを行ってください。  
+　promicroのコネクタ補強、コンスルーピンのはんだ付けを行ってください。  
+　promicroは実装されている面がキーボード基板に向くようにコンスルーを取り付けてください。  
  - promicroのコネクタ補強：[ProMicroのモゲ防止ついでにQMK_Firmwareを書き込む](https://qiita.com/hdbx/items/2f3e4ddfcadda2a5578e)
  - コンスルーピンのはんだ付け：[Helixベータ ビルドガイド](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md)
 
-### ファームウェアを準備する
+![img](../../_image/promicro01.jpg)  
+![img](../../_image/promicro02.jpg)  
 
-　キーボード用のファームウェア（ハードウェア用の専用ソフトウェアのことをファームウェアと呼びます）の準備をします。  
-  leftover30はQMKというソフトウェアにキーマップを登録してあり、それをビルドして基板に書き込むことでキーボードとして動作するようになっています。自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+### QMKを準備する
 
-　可能なら[QMK - qmk/qmk_firmware](https://github.com/marksard/qmk_firmware/tree/my_customize)をクローンしてmake、書き込みまでチャレンジしてみてください。以下は参考になるサイトの紹介です。  
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
+
+1. 下記リンクのQMK Toolboxをインストールします
+2. QMK Toolboxの「Keyboard from qmk.fm」の下のリストからleftover30を選びます
+   1. （もし見つからなければ以下のリンクのデフォルトhexファイルをDLして、「Local File」で選択してください）
+3. promicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
+   1. （リセットボタンをダブルクリックしないと書き込めないパターンのものもあります）
+
+書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
+
+[デフォルトhexファイル](https://qmk.fm/compiled/marksard_leftover30_default.hex)  
+[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
+
+#### キーマップを自分好みにする
+
+　もしあなたがプログラミング未経験者なら、QMK Configuratorを使うのが早いでしょう。  
+
+[QMK Configurator](https://docs.qmk.fm/#/ja/newbs_building_firmware_configurator)  
+
+#### ビルド環境を作成する
+
+　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
 
 [QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
 
-　leftover30のデフォルトキーマップは ```qmk compile -kb leftover30 -km default``` で可能です。書き込む場合は ```qmk flash -kb leftover30 -km default``` とすると、コンパイルが完了次第書き込み準備が出来るので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
-
-　動作確認やとりあえず使ってみたいなどの場合は以下からhexファイルをDLして、QMK Toolboxを別途インストールして書き込んでください。  
-書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
-
-[leftover30.hexファイル](https://drive.google.com/file/d/1G8p3kP3uNw5W0oS8urCZ2n4kMvXU0VGv/view?usp=sharing)  
-[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
-
-　
+　leftover30のデフォルトキーマップは  
+```qmk compile -kb marksard/leftover30 -km default```
+で可能です。書き込む場合は
+```qmk flash -kb marksard/leftover30 -km default```  
+とすると、コンパイルが完了次第書き込み待ちになるので、その状態で基板にあるリセットボタンをクリック、もしくはダブルクリックで書き込みが始まります。  
 
 ## ダイオードのはんだ付け
 
