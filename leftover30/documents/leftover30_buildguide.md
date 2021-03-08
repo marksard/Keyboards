@@ -79,30 +79,35 @@ ISOエンターを選択した場合、LキーとISOエンターの間が0.25U�
 ![img](../../_image/promicro01.jpg)  
 ![img](../../_image/promicro02.jpg)  
 
-### QMKを準備する
+### キーボード用ソフトウェアをpromicroに書き込む
 
-　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので、ほぼ何不自由なく使えるように工夫しています。
+　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので不自由なく使えるように工夫しています。
 
-1. 下記リンクのQMK Toolboxをインストールします
-2. QMK Toolboxの「Keyboard from qmk.fm」の下のリストからleftover30を選びます
-   1. （もし見つからなければ以下のリンクのデフォルトhexファイルをDLして、「Local File」で選択してください）
-3. promicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
-   1. （リセットボタンをダブルクリックしないと書き込めないパターンのものもあります）
+1. [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)をダウンロードし、インストールします
+2. [marksard/qmk_firmware_hex](https://github.com/marksard/qmk_firmware_hex/releases)にある最新のhexファイルからmarksard_leftover30_via.zipをダウンロード、zipを展開します
+3. QMK Toolboxの「open」ボタンをクリックして、先程展開しhexファイルを選択します
+4. QMK Toolboxの「Auto-Flash」チェックボックスにチェックを入れてpromicro(直付けの場合は基板)をPCに接続し、リセットボタンを押して書き込みます。
+   1. （リセットボタンをダブルクリックしないと書き込めないパターン、初回のみリセットボタンを押下しなくても書き込みが始まるのものもあります）
 
 書き込み方法などはサリチル酸さんの[（初心者編）自作キーボードにファームウェアを書き込む](https://salicylic-acid3.hatenablog.com/entry/qmk-toolbox)の記事が参考になります。  
 
-[デフォルトhexファイル](https://qmk.fm/compiled/marksard_leftover30_default.hex)  
-[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
+#### REMAPを使用する
 
-#### キーマップを自分好みにする
+　上記で書き込んだファイルはVIA対応ファームウェアで、ファームウェアを書き直さなくてもアプリケーション上からキー設定を変更することが出来ます。  
+　ここでは国産のVIA対応キーマップ変更アプリケーションとして、WEB上からキーボードの設定が出来る[REMAP](https://remap-keys.app/)を紹介します。  
+対応したキーボードを接続した状態で、「START REMAP FOR YOUR KEYBOARD」→「+KEYBOARD」ボタンを押下するとキーボード名が出ます。それを押下することでカスタマイズ画面が出てきます。  
 
-　もしあなたがプログラミング未経験者なら、QMK Configuratorを使うのが早いでしょう。  
-
-[QMK Configurator](https://docs.qmk.fm/#/ja/newbs_building_firmware_configurator)  
+詳しい操作方法などについては[初心者編）Remapを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/remap-manual)の記事が参考になります。  
 
 #### ビルド環境を作成する
 
-　自分でソースからビルドが出来るようになるとキーを一つ一つ細かい動作まで自在にカスタムすることが出来ます。  
+　現状、以下のようなカスタムはソースファイルからビルドする必要があります。  
+
+- ロータリエンコーダーの動作のカスタマイズ
+- タップと長押しの判定タイミングを調整する
+- OLED表示の内容を変更
+
+　ソースからビルドが出来るようになると他の多彩な機能を扱え、細かい動作まで自在にカスタムすることが出来ます。  
 
 [QMK　ビルド環境を準備する](https://docs.qmk.fm/#/ja/newbs_getting_started)  
 
