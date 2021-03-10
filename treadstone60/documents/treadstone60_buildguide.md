@@ -51,12 +51,15 @@
 #### REMAPを使用する
 
 　上記で書き込んだファイルはVIA対応ファームウェアで、ファームウェアを書き直さなくてもアプリケーション上からキー設定を変更することが出来ます。  
-　このファームウェアの初期状態はUSキーボード（＋日本語JISキーボードのキーあり）向けとなっていますので、適宜変更する必要があります。  
-[キーマップ解説](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/treadstone60/keymaps/default/readme_jp.md) はこちら。日本語切り替えは(Layer1キー + B位置のキー)、Win/Mac切り替えは(Layer3キー + E位置のキーでmac向け、Layer3キー + R位置のキー)になっています。  
 　ここでは国産のVIA対応キーマップ変更アプリケーションとして、WEB上からキーボードの設定が出来る[REMAP](https://remap-keys.app/)を紹介します。  
 対応したキーボードを接続した状態で、「START REMAP FOR YOUR KEYBOARD」→「+KEYBOARD」ボタンを押下するとキーボード名が出ます。それを押下することでカスタマイズ画面が出てきます。  
 
 詳しい操作方法などについてはサリチル酸さんの[（初心者編）Remapを使ってキーマップを書き換えよう](https://salicylic-acid3.hatenablog.com/entry/remap-manual)の記事が参考になります。  
+
+　この初期状態はUSキーボード（＋日本語JISキーボードのキー配置あり）mac向けとなっていますので、適宜変更する必要があります。  
+Win/Mac切り替えは(Layer3キー + E位置のキーでmac向け、Layer3キー + R位置のキー)になっています。  
+漢字/英字切り替えは(Layer1キー + B位置のキー)になっています。
+![img](./_image/viamap.png)
 
 #### ビルド環境を作成する
 
