@@ -11,7 +11,7 @@ This repository is warehouse of my keyboard architecture.
 The Rhymestone is 40-key (40%) ortholinear keyboard. It is based on [The crkbd](https://github.com/foostan/crkbd) and [The Helix keyboard](https://github.com/MakotoKurauchi/helix). Thank you so much makoto kurauchi-san and foostan-san.😊  
 
 [Build guide](./rhymestone/documents/rhymestone_buildguide.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/rhymestone)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/rhymestone/)  
 
 ## Treadstone48
@@ -47,7 +47,7 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 The Stonehenge30 is 30-key (30%) Symmetric staggered keyboard. It is based on the Treadstone48. And it is thumb-less (not use thumb) keyboard of prototype.  
 
 [Build guide](./stonehenge30/documents/stonehenge30_buildguide.md)  
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/stonehenge30)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/stonehenge30/)  
 [About Stonehenge30](https://marksard.github.io/2019/02/13/make-stonehenge30/)  
 [Case design sample](https://marksard.github.io/2019/04/11/wood-case/)  
@@ -66,8 +66,8 @@ The Treadstone32 is 32-key (30%) Symmetric staggered keyboard. It is based on th
 This keyboard is removing dedicated modifire-key from the Treadstone48 for more compact. But 2 thumb-key is left same as Treadtone48.  
 
 [Build guide (lite)](./treadstone32/documents/treadstone32lite_buildguide.md)  
-
 [Build guide](./treadstone32/documents/treadstone32_buildguide.md)  
+
 [Build guide (En)](./treadstone32/documents/treadstone32_buildguide_en.md)  
 [Firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/treadstone32)  
 [Hardware data](https://github.com/marksard/Keyboards/tree/master/treadstone32/)  
@@ -83,7 +83,7 @@ The Treadstone60 is 59-62key (60%) Symmetric staggered keyboard. It is based on 
 
 [Build guide](./treadstone60/documents/treadstone60_buildguide.md)  
 
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/)  
 [About Treadstone60](https://marksard.github.io/2019/12/13/about-treadstone60/)  
 
 ## Leftover30
@@ -96,7 +96,7 @@ The Leftover30 is 34-36key (30%) Row staggered keyboard. This project was create
 
 [Build guide](./leftover30/documents/leftover30_buildguide.md)  
 
-[Firmware](https://github.com/marksard/qmk_firmware/tree/my_customize/keyboards/)  
+[Firmware](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/)  
 
 ## Troubleshooting
 
