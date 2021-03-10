@@ -81,7 +81,7 @@ ISOエンターを選択した場合、LキーとISOエンターの間が0.25U�
 
 ### キーボード用ソフトウェアをpromicroに書き込む
 
-　このキーボードはQMKというキーボード用のソフトウェアで動作するようにプログラミングしています。あらかじめ登録してあるdefaultキーマップは作者が実際に使用しているもので不自由なく使えるように工夫しています。
+　このキーボードはQMKというキーボード用のソフトウェアで動作します。お買い上げの時点ではこのソフトウェアが入っていない状態ですので、書き込む必要があります。  
 
 1. [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)をダウンロードし、インストールします
 2. [marksard/qmk_firmware_hex](https://github.com/marksard/qmk_firmware_hex/releases)にある最新のhexファイルからmarksard_leftover30_via.zipをダウンロード、zipを展開します
@@ -94,6 +94,8 @@ ISOエンターを選択した場合、LキーとISOエンターの間が0.25U�
 #### REMAPを使用する
 
 　上記で書き込んだファイルはVIA対応ファームウェアで、ファームウェアを書き直さなくてもアプリケーション上からキー設定を変更することが出来ます。  
+　このファームウェアの初期状態はUSキーボード（＋日本語JISキーボードのキー配置あり）向けとなっていますので、適宜変更する必要があります。  
+[キーマップ解説](https://github.com/marksard/qmk_firmware/tree/own_build/keyboards/marksard/leftover30/keymaps/default/readme_jp.md) はこちら。日本語切り替えは(Layer1キー + B位置のキー)、Win/Mac切り替えは(Layer3キー + E位置のキーでmac向け、Layer3キー + R位置のキー)になっています。  
 　ここでは国産のVIA対応キーマップ変更アプリケーションとして、WEB上からキーボードの設定が出来る[REMAP](https://remap-keys.app/)を紹介します。  
 対応したキーボードを接続した状態で、「START REMAP FOR YOUR KEYBOARD」→「+KEYBOARD」ボタンを押下するとキーボード名が出ます。それを押下することでカスタマイズ画面が出てきます。  
 
