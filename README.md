@@ -2,8 +2,14 @@
 
 This repository is warehouse of my keyboard architecture.  
 
+## About Firmware
+
+[Release firmware](https://github.com/marksard/qmk_firmware_hex/releases)  
+[Keymap editing web service REMAP](https://remap-keys.app/)  
+
 ## WARNING
-<b>Note that for these keyboards, the design is older and also less likely to support the latest firmware and architecture.<b>
+<b>Note that for these keyboards, the design is older and also less likely to support the latest firmware and architecture.<b>  
+<b>Also, KICAD files may be incomplete, they are not going to be perfect.<b>
 
 ## Rhymestone
 
