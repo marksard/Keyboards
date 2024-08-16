@@ -2,6 +2,9 @@
 
 This repository is warehouse of my keyboard architecture.  
 
+## WARNING
+<b>Note that for these keyboards, the design is older and also less likely to support the latest firmware and architecture.<b>
+
 ## Rhymestone
 
 ![img](/_image/_rhymestone.jpg)  
@@ -38,7 +41,7 @@ And more one topic, this key arrangement can use general ansi 104 keycaps.
 [About Treadstone48](https://marksard.github.io/2018/12/17/about-treadstone48/)  
 [Case design sample](https://marksard.github.io/2019/04/11/wood-case/)  
 
-## Stonehenge30
+## Stonehenge30 (deprecated)
 
 ![img](/_image/_stonehenge30.jpg)  
 
